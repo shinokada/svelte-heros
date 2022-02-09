@@ -1,6 +1,15 @@
 {
   "name": "@codewithshin/svelte-heroicons",
-  "version": "1.0.1",
+  "version": "1.0.2",
+	"description": "Svelte + TailwindCSS + HeroIcons components",
+  "author": {
+    "name": "Shinichi Okada",
+    "email": "connect@codewithshin.com",
+    "url": "https://blog.codewithshin.com"
+  },
+	"bugs": "https://github.com/shinokada/svelte-heroicons/issues",
+  "homepage": "https://github.com/shinokada/svelte-heroicons",
+	"license": "MIT",
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
@@ -18,5 +27,15 @@
     "svelte2tsx": "^0.5.3",
     "tailwindcss": "^3.0.12"
   },
-  "type": "module"
+  "type": "module",
+	"keywords": [
+    "svelte",
+    "sveltekit",
+    "tailwindcss",
+    "icons"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shinokada/svelte-heroicons"
+  }
 }
