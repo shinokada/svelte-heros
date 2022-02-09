@@ -1,0 +1,21 @@
+{
+  "name": "svelte-heroicons",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "svelte-kit dev",
+    "build": "svelte-kit build",
+    "package": "svelte-kit package",
+    "preview": "svelte-kit preview"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-auto": "next",
+    "@sveltejs/kit": "next",
+    "svelte": "^3.44.0",
+    "postcss": "^8.4.5",
+    "postcss-load-config": "^3.1.1",
+    "svelte-preprocess": "^4.10.1",
+    "autoprefixer": "^10.4.2",
+    "tailwindcss": "^3.0.12"
+  },
+  "type": "module"
+}
