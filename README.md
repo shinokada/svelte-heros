@@ -8,7 +8,9 @@ Hero Icons for Svelte
 
 ## List of icons
 
-Please see [https://heroicons.com/](https://heroicons.com/).
+[Icon names](https://github.com/shinokada/svelte-heroicons/blob/main/icon-names.md)
+
+Please also see [https://heroicons.com/](https://heroicons.com/).
 
 ## Installation
 
