@@ -15,14 +15,14 @@ Please also see [https://heroicons.com/](https://heroicons.com/).
 ## Installation
 
 ```sh
-npm i svelte-heroicons
+npm i @codewithshin/svelte-heroicons
 ```
 
 ## Import
 
 ```js
 <script>
-  import { AcademicCapIcon } from "$lib/heroicons/solid";
+  import { AcademicCapIcon } from "@codewithshin/svelte-heroicons";
 </script>
 ```
 
@@ -45,7 +45,7 @@ Add color in the `className` prop like:
 
 ```js
 <script>
-  import { AcademicCapIcon } from "$lib/heroicons/outline";
+  import { AcademicCapIcon } from "@codewithshin/svelte-heroicons";
 </script>
 
 <AcademicCapIcon />
