@@ -33,9 +33,9 @@ npm i @codewithshin/svelte-heroicons
 | className | `h-6 w-6`   |
 | viewBox   | `0 0 24 24` |
 
-## Color
+## Modify it
 
-Add color in the `className` prop like:
+Add TailwindCSS in the `className` prop like:
 
 ```js
 <AcademicCapIcon className="h-20 w-20 text-pink-700" />
