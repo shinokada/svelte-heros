@@ -38,7 +38,7 @@ npm i @codewithshin/svelte-heroicons
 Add TailwindCSS in the `className` prop like:
 
 ```js
-<AcademicCapIcon className="h-20 w-20 text-pink-700" />
+<AcademicCapIconSolid className="h-20 w-20 text-pink-700" />
 ```
 
 ## Examples
