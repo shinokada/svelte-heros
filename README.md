@@ -22,7 +22,7 @@ npm i @codewithshin/svelte-heroicons
 
 ```js
 <script>
-  import { AcademicCapIcon } from "@codewithshin/svelte-heroicons";
+  import { AcademicCapIconSolid} from "@codewithshin/svelte-heroicons";
 </script>
 ```
 
@@ -45,14 +45,14 @@ Add TailwindCSS in the `className` prop like:
 
 ```js
 <script>
-  import { AcademicCapIcon } from "@codewithshin/svelte-heroicons";
+  import { AcademicCapIconSolid } from "@codewithshin/svelte-heroicons";
 </script>
 
-<AcademicCapIcon />
+<AcademicCapIconSolid />
 
-<AcademicCapIcon className="h-5 w-5 text-blue-500" />
+<AcademicCapIconSolid className="h-5 w-5 text-blue-500" />
 
-<AcademicCapIcon className="h-40 w-40 text-blue-500" />
+<AcademicCapIconSolid className="h-40 w-40 text-blue-500" />
 
-<AcademicCapIcon className="h-80 w-80 text-red-900" />
+<AcademicCapIconSolid className="h-80 w-80 text-red-900" />
 ```
