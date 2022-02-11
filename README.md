@@ -1,6 +1,6 @@
 # Svelte-heroicons
 
-Hero Icons for Svelte
+Hero Icons for Svelte. You can import outline and solid icons without name conflict.
 
 ## Requirement
 
@@ -10,7 +10,7 @@ Hero Icons for Svelte
 
 [Icon names](https://github.com/shinokada/svelte-heroicons/blob/main/icon-names.md)
 
-Please also see [https://heroicons.com/](https://heroicons.com/).
+See all the icons at [https://heroicons.com/](https://heroicons.com/).
 
 ## Installation
 
@@ -20,9 +20,13 @@ npm i @codewithshin/svelte-heroicons
 
 ## Import
 
+Solid icons end with `xxxxxSolid` and outline icons end with `xxxxxOutline`.
+
+For example:
+
 ```js
 <script>
-  import { AcademicCapIconSolid} from "@codewithshin/svelte-heroicons";
+  import { AcademicCapIconSolid, AcademicCapIconOutline } from "@codewithshin/svelte-heroicons";
 </script>
 ```
 
@@ -43,16 +47,20 @@ Add TailwindCSS in the `className` prop like:
 
 ## Examples
 
+[REPL](https://svelte.dev/repl/e532f0a6cf7f4d8cae9a9cc2088d234b?version=3.46.4)
+
 ```js
 <script>
-  import { AcademicCapIconSolid } from "@codewithshin/svelte-heroicons";
+  import { AcademicCapIconSolid, AcademicCapIconOutline } from "@codewithshin/svelte-heroicons";
 </script>
 
 <AcademicCapIconSolid />
 
-<AcademicCapIconSolid className="h-5 w-5 text-blue-500" />
+<AcademicCapIconOutline className="h-5 w-5 text-blue-500" />
 
-<AcademicCapIconSolid className="h-40 w-40 text-blue-500" />
+<AcademicCapIconSolid className="h-20 w-20 text-green-500" />
 
-<AcademicCapIconSolid className="h-80 w-80 text-red-900" />
+<AcademicCapIconOutline className="h-20 w-20 text-red-900" />
 ```
+
+[REPL example](https://svelte.dev/repl/fd99dc0efa074ba395b8cb1d0603bcae?version=3.46.4)
