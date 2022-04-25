@@ -1,3 +1,3 @@
-<script>export let className="h-6 w-6"; export let viewBox="0 0 24 24";</script><svg xmlns="http://www.w3.org/2000/svg" class={className} fill="none" {viewBox} stroke="currentColor" aria-hidden="true">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"/>
+<script>export let size="24";</script><svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} class={$$props.class} fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"/>
 </svg>

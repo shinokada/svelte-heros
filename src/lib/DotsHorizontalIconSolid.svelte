@@ -1,3 +1,3 @@
-<script>export let className="h-6 w-6"; export let viewBox="0 0 20 20";</script><svg xmlns="http://www.w3.org/2000/svg" {viewBox} class={className} fill="currentColor" aria-hidden="true">
+<script>export let size="24";</script><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" stroke="currentColor" width={size} height={size} class={$$props.class} fill="currentColor" aria-hidden="true">
   <path d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z"/>
 </svg>

@@ -1,3 +1,3 @@
-<script>export let className="h-6 w-6"; export let viewBox="0 0 20 20";</script><svg xmlns="http://www.w3.org/2000/svg" {viewBox} class={className} fill="currentColor" aria-hidden="true">
-  <path class={className} fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"/>
+<script>export let size="24";</script><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" stroke="currentColor" width={size} height={size} class={$$props.class} fill="currentColor" aria-hidden="true">
+  <path stroke="currentColor" width={size} height={size} class={$$props.class} fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"/>
 </svg>
