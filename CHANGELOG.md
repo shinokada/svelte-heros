@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.1](https://github.com/shinokada/svelte-heroicons/compare/v1.2.0...v1.2.1) (2022-04-26)
+
+
+### Bug Fixes
+
+* moved class={90360props.class} to the end of <svg> ([4156617](https://github.com/shinokada/svelte-heroicons/commit/4156617ce204cccfbac85af57f2155bf178a1b90))
+
 ## [1.2.0](https://github.com/shinokada/svelte-heroicons/compare/v1.1.4...v1.2.0) (2022-04-25)
 
 
