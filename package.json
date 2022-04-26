@@ -7,8 +7,8 @@
     "email": "connect@codewithshin.com",
     "url": "https://blog.codewithshin.com"
   },
-  "bugs": "https://github.com/shinokada/svelte-heroicons/issues",
-  "homepage": "https://github.com/shinokada/svelte-heroicons",
+  "bugs": "https://github.com/shinokada/svelte-heros/issues",
+  "homepage": "https://github.com/shinokada/svelte-heros",
   "license": "MIT",
   "scripts": {
     "dev": "svelte-kit dev",
@@ -36,6 +36,6 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/shinokada/svelte-heroicons"
+    "url": "https://github.com/shinokada/svelte-heros"
   }
 }

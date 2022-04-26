@@ -1,4 +1,4 @@
-# Svelte-heroicons
+# Svelte-heros
 
 Hero Icons for Svelte. You can import outline and solid icons without name conflict.
 
@@ -6,14 +6,14 @@ You can use this icons with Tailwind CSS.
 
 ## List of icons
 
-[Icon names](https://github.com/shinokada/svelte-heroicons/blob/main/icon-names.md)
+[Icon names](https://github.com/shinokada/svelte-heros/blob/main/icon-names.md)
 
 See all the icons at [https://heroicons.com/](https://heroicons.com/).
 
 ## Installation
 
 ```sh
-npm i @codewithshin/svelte-heroicons@latest
+npm i svelte-heros@latest
 ```
 
 ## Import
@@ -24,15 +24,17 @@ For example:
 
 ```js
 <script>
-  import { AcademicCapSolid, AcademicCapOutline } from "@codewithshin/svelte-heroicons";
+  import { AcademicCapSolid, AcademicCapOutline } from "svelte-heros";
 </script>
 ```
 
 ## Props
 
-| Name | Default |
-| ---- | ------- |
-| size | 24      |
+| Name  | Default      |
+| ----- | ------------ |
+| size  | 24           |
+| color | currentColor |
+| class |              |
 
 You can add class to change colors.
 
@@ -75,7 +77,7 @@ Let's use `dark` for the dark mode class as an example.
 
 ## Import all
 
-Use `import * as Icon from 'svelte-heroicons`.
+Use `import * as Icon from 'svelte-heros`.
 
 
 ## Examples
@@ -84,7 +86,7 @@ Use `import * as Icon from 'svelte-heroicons`.
 
 ```html
 <script>
-  import { AcademicCapSolid, AcademicCapOutline } from "@codewithshin/svelte-heroicons";
+  import { AcademicCapSolid, AcademicCapOutline } from "svelte-heros";
 </script>
 
 <AcademicCapSolid />
