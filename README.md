@@ -24,7 +24,7 @@ For example:
 
 ```js
 <script>
-  import { AcademicCapIconSolid, AcademicCapIconOutline } from "@codewithshin/svelte-heroicons";
+  import { AcademicCapSolid, AcademicCapOutline } from "@codewithshin/svelte-heroicons";
 </script>
 ```
 
@@ -36,12 +36,47 @@ For example:
 
 You can add class to change colors.
 
+## Size
 
-### TailwindCSS example
+Use the `size` prop to change the size of icons.
 
 ```html
-<AcademicCapIconSolid class="text-pink-700 dark:text-blue-300" />
+<AcademicCapOutline size="30" />
+<AcademicCapOutline size="35" />
+<AcademicCapOutline size="42" />
 ```
+
+## CSS HEX Colors
+
+Use the `color` prop to change colors with HEX color code.
+
+```html
+<AcademicCapOutline color="#ff0000" />
+<AcademicCapOutline color="#00ffd8" />
+```
+
+## Tailwind CSS support
+
+Use the `class` prop to change colors and add additional css.
+
+```html
+<AcademicCapSolid class="text-pink-700 mr-4" />
+```
+
+## Dark mode with Tailwind CSS
+
+If you use the dark mode on your website with Tailwind CSS, add your dark mode class to the `class` prop.
+
+Let's use `dark` for the dark mode class as an example.
+
+```html
+<AcademicCapSolid class="text-pink-700 dark:text-blue-300" />
+```
+
+## Import all
+
+Use `import * as Icon from 'svelte-heroicons`.
+
 
 ## Examples
 
@@ -49,16 +84,16 @@ You can add class to change colors.
 
 ```html
 <script>
-  import { AcademicCapIconSolid, AcademicCapIconOutline } from "@codewithshin/svelte-heroicons";
+  import { AcademicCapSolid, AcademicCapOutline } from "@codewithshin/svelte-heroicons";
 </script>
 
-<AcademicCapIconSolid />
+<AcademicCapSolid />
 
-<AcademicCapIconOutline size="36" class="text-blue-500" />
+<AcademicCapOutline size="36" class="text-blue-500" />
 
-<AcademicCapIconSolid size="40" class=" text-green-500" />
+<AcademicCapSolid size="40" class=" text-green-500" />
 
-<AcademicCapIconOutline size="48" class="text-red-900" />
+<AcademicCapOutline size="48" class="text-red-900" />
 ```
 
 [REPL example](https://svelte.dev/repl/fd99dc0efa074ba395b8cb1d0603bcae?version=3.46.4)

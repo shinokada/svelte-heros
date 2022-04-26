@@ -1,5 +1,5 @@
 {
-  "name": "@codewithshin/svelte-heroicons",
+  "name": "svelte-heros",
   "version": "1.2.1",
   "description": "Svelte + TailwindCSS + HeroIcons components",
   "author": {
