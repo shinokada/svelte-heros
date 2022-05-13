@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.1](https://github.com/shinokada/svelte-heros/compare/v2.0.0...v2.0.1) (2022-05-13)
+
+
+### Bug Fixes
+
+* remove stroke on solid icons ([9d0bb3f](https://github.com/shinokada/svelte-heros/commit/9d0bb3f9c275ad6f3ba415339222f2f01e488e87))
+
 ## [2.0.0](https://github.com/shinokada/svelte-heros/compare/v1.3.0...v2.0.0) (2022-04-26)
 
 
