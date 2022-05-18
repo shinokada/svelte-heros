@@ -1,8 +1,6 @@
 # Svelte-heros
 
-Hero Icons for Svelte. You can import outline and solid icons without name conflict.
-
-You can use this icons with Tailwind CSS.
+Hero Icons for Svelte. You can import outline and solid icons without name conflict. Svlete-Heros support major CSS framework. You can add additional CSS using the `class` props.
 
 ## List of icons
 
@@ -57,15 +55,15 @@ Use the `color` prop to change colors with HEX color code.
 <AcademicCapOutline color="#00ffd8" />
 ```
 
-## Tailwind CSS support
+## CSS framework support
 
 Use the `class` prop to change colors and add additional css.
+
+For example, Tailwind CSS:
 
 ```html
 <AcademicCapSolid class="text-pink-700 mr-4" />
 ```
-
-## Dark mode with Tailwind CSS
 
 If you use the dark mode on your website with Tailwind CSS, add your dark mode class to the `class` prop.
 
@@ -73,6 +71,12 @@ Let's use `dark` for the dark mode class as an example.
 
 ```html
 <AcademicCapSolid class="text-pink-700 dark:text-blue-300" />
+```
+
+Bootstrap example:
+
+```html
+<AcademicCapSolid class="position-absolute top-0 px-1" />
 ```
 
 ## Import all
