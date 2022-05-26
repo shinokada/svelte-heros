@@ -1,3 +1,3 @@
-<script>export let size="24"; export let color="currentColor";</script><svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="none" viewBox="0 0 24 24" stroke-width="2" stroke={color} aria-hidden="true" class={$$props.class}>
+<script>export let size="24"; export let color="currentColor";export let ariaLabel="translate" </script><svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} class={$$props.class} {...$$restProps} aria-label={ariaLabel} fill="none" viewBox="0 0 24 24" stroke-width="2" stroke={color} >
   <path stroke-linecap="round" stroke-linejoin="round" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/>
 </svg>

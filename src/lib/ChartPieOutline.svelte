@@ -1,4 +1,4 @@
-<script>export let size="24"; export let color="currentColor";</script><svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="none" viewBox="0 0 24 24" stroke-width="2" stroke={color} aria-hidden="true" class={$$props.class}>
+<script>export let size="24"; export let color="currentColor";export let ariaLabel="chart pie" </script><svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} class={$$props.class} {...$$restProps} aria-label={ariaLabel} fill="none" viewBox="0 0 24 24" stroke-width="2" stroke={color} >
   <path stroke-linecap="round" stroke-linejoin="round" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"/>
   <path stroke-linecap="round" stroke-linejoin="round" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"/>
 </svg>

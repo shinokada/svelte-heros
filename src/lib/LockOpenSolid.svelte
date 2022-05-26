@@ -1,3 +1,3 @@
-<script>export let size="24"; export let color="currentColor";</script><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width={size} height={size} fill={color} aria-hidden="true" class={$$props.class}>
+<script>export let size="24"; export let color="currentColor";export let ariaLabel="lock open" </script><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width={size} height={size} class={$$props.class} {...$$restProps} aria-label={ariaLabel} fill={color} >
   <path d="M10 2a5 5 0 00-5 5v2a2 2 0 00-2 2v5a2 2 0 002 2h10a2 2 0 002-2v-5a2 2 0 00-2-2H7V7a3 3 0 015.905-.75 1 1 0 001.937-.5A5.002 5.002 0 0010 2z"/>
 </svg>

@@ -1,3 +1,3 @@
-<script>export let size="24"; export let color="currentColor";</script><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width={size} height={size} fill={color} aria-hidden="true" class={$$props.class}>
+<script>export let size="24"; export let color="currentColor";export let ariaLabel="arrow circle up" </script><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width={size} height={size} class={$$props.class} {...$$restProps} aria-label={ariaLabel} fill={color} >
   <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 001.414 1.414L9 9.414V13a1 1 0 102 0V9.414l1.293 1.293a1 1 0 001.414-1.414z" clip-rule="evenodd"/>
 </svg>
