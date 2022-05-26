@@ -79,14 +79,43 @@ Bootstrap example:
 <AcademicCapSolid class="position-absolute top-0 px-1" />
 ```
 
+
+## aria-label
+
+All icons have aria-label. For example `AcademicCapSolid` has `aria-label="academic cap"`. 
+Use `ariaLabel` prop to modify the `aria-label` value. 
+
+```html
+<AcademicCapSolid ariaLabel="red academic cap" class="text-red-500">
+```
+
+## Passing down other attributes
+
+You can pass other attibutes as well.
+
+```html
+<AcademicCapSolid tabindex="0">
+```
+
 ## Import all
 
 Use `import * as Icon from 'svelte-heros`.
 
+```html
+<script>
+  import * as Icon from "svelte-heros";
+</script>
 
-## Examples
+<Icon.ShoppingBagOutline size="30" class="text-red-500" />
+<Icon.SparklesSolid size="40" class="text-blue-700" />
+<Icon.StarOutline size="50" class="text-green-700" />
+<Icon.VolumeUpSolid size="60" class="text-purple-500" />
+<Icon.VolumeUpSolid size="100" class="text-purple-500" tabindex="0" />
+```
 
 [REPL](https://svelte.dev/repl/e532f0a6cf7f4d8cae9a9cc2088d234b?version=3.46.4)
+
+## More examples
 
 ```html
 <script>
@@ -108,10 +137,3 @@ Use `import * as Icon from 'svelte-heros`.
 ## Other icons
 
 - [Svelte-Icon-Sets](https://svelte-svg-icons.vercel.app/)
-- [Svelte-Ionicons](https://www.npmjs.com/package/svelte-ionicons)
-- [Svelte-Awesome-Icons](https://www.npmjs.com/package/svelte-awesome-icons)
-- [Svelte-heros](https://github.com/shinokada/svelte-heros)
-- [Svelte-lucide](https://github.com/shinokada/svelte-lucide)
-- [Svelte-flags](https://www.npmjs.com/package/svelte-flags)
-- [Svlete-simples](https://github.com/shinokada/svelte-simples)
-- [Svelte-feathers](https://github.com/shinokada/svelte-feathers)
