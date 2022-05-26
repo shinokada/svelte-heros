@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/shinokada/svelte-heros/compare/v2.0.3...v2.1.0) (2022-05-26)
+
+
+### Features
+
+* add restProps and aria-label ([6c989db](https://github.com/shinokada/svelte-heros/commit/6c989db5ecc6d01c9b341afe0f60cb324356fb94))
+
 ### [2.0.3](https://github.com/shinokada/svelte-heros/compare/v2.0.2...v2.0.3) (2022-05-18)
 
 ### [2.0.2](https://github.com/shinokada/svelte-heros/compare/v2.0.1...v2.0.2) (2022-05-18)
