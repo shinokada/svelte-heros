@@ -2,6 +2,12 @@
 
 Hero Icons for Svelte. You can import outline and solid icons without name conflict. Svlete-Heros support major CSS framework. You can add additional CSS using the `class` props.
 
+
+<p align="center">
+<img width="450" src="https://raw.githubusercontent.com/shinokada/svelte-heros/main/static/images/heros1.webp" />
+<img width="450" src="https://raw.githubusercontent.com/shinokada/svelte-heros/main/static/images/heros2.webp" />
+</p>
+
 ## List of icons
 
 [Icon names](https://github.com/shinokada/svelte-heros/blob/main/icon-names.md)
