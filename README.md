@@ -20,7 +20,11 @@ See all the icons at [https://heroicons.com/](https://heroicons.com/).
 npm i svelte-heros@latest
 ```
 
-## Import
+## REPL
+
+[Demo](https://svelte.dev/repl/48606ee88712441caebd7d09aa62602c?version=3.48.0)
+
+## Usage
 
 Solid icons end with `xxxxxSolid` and outline icons end with `xxxxxOutline`.
 
