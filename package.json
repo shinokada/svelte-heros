@@ -28,6 +28,8 @@
     "tailwindcss": "^3.0.12"
   },
   "type": "module",
+  "main": "index.js",
+  "svelte": "index.js",
   "keywords": [
     "svelte",
     "sveltekit",
