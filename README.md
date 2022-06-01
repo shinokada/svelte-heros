@@ -8,6 +8,10 @@ Hero Icons for Svelte. You can import outline and solid icons without name confl
 <img width="450" src="https://raw.githubusercontent.com/shinokada/svelte-heros/main/static/images/heros2.webp" />
 </p>
 
+## Original source
+
+[tailwindlabs/heroicons](https://github.com/tailwindlabs/heroicons)
+
 ## List of icons
 
 [Icon names](https://github.com/shinokada/svelte-heros/blob/main/icon-names.md)
