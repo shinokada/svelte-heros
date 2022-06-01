@@ -1,32 +1,34 @@
 <script>
   import {
-    AcademicCapOutline,
-    AcademicCapSolid,
-    ChevronLeftSolid,
-    CurrencyRupeeSolid,
-    MenuAlt1Outline,
-    ThumbDownOutline,
-    ThumbDownSolid,
+    AcademicCap,
+    ChevronLeft,
+    CurrencyRupee,
+    MenuAlt1,
+    ThumbDown,
   } from "$lib";
 </script>
 
-<AcademicCapOutline color="#ff0000" />
-<AcademicCapOutline color="#00ffd8" />
+<AcademicCap variation="solid" size="50" />
+<AcademicCap size="50" />
 
-<AcademicCapOutline class="text-blue-500 dark:text-pink-500" />
-<AcademicCapSolid class="text-green-500 dark:text-red-300" />
+<AcademicCap
+  class="text-blue-500 dark:text-pink-500"
+  variation="solid"
+  size="50"
+/>
+<AcademicCap color="#ff0000" size="50" />
 
-<AcademicCapOutline size="36" class="dark:text-purple-600" />
-<AcademicCapSolid size="36" class="text-red-900 dark:text-yellow-300" />
+<AcademicCap size="36" class="dark:text-purple-600" />
+<AcademicCap size="36" class="text-red-900 dark:text-yellow-300" />
 
-<AcademicCapOutline size="42" />
-<AcademicCapSolid size="42" />
-<ChevronLeftSolid size="36" class="text-blue-500 " />
+<AcademicCap size="42" />
+<AcademicCap size="42" />
+<ChevronLeft size="36" class="text-blue-500 " />
 
-<CurrencyRupeeSolid size="36" class="text-purple-500" />
+<CurrencyRupee size="36" class="text-purple-500" />
 
-<MenuAlt1Outline size="36" class="text-red-900" />
+<MenuAlt1 size="36" class="text-red-900" />
 
-<ThumbDownOutline size="36" class="dark:text-blue-500 text-yellow-500" />
+<ThumbDown size="36" class="dark:text-blue-500 text-yellow-500" />
 
-<ThumbDownSolid size="36" class="dark:text-blue-500 text-yellow-500" />
+<ThumbDown size="36" class="dark:text-blue-500 text-yellow-500" />

@@ -14,7 +14,7 @@ Hero Icons for Svelte. You can import outline and solid icons without name confl
 
 ## List of icons
 
-[Icon names](https://github.com/shinokada/svelte-heros/blob/main/icon-names.md)
+[Icon names](https://github.com/shinokada/svelte-heros/blob/main/icon-list.md)
 
 See all the icons at [https://heroicons.com/](https://heroicons.com/).
 
@@ -30,34 +30,37 @@ npm i svelte-heros@latest
 
 ## Usage
 
-Solid icons end with `xxxxxSolid` and outline icons end with `xxxxxOutline`.
-
-For example:
-
 ```js
 <script>
-  import { AcademicCapSolid, AcademicCapOutline } from "svelte-heros";
+  import { AcademicCap } from "svelte-heros";
 </script>
 ```
 
 ## Props
 
-| Name  | Default      |
-| ----- | ------------ |
-| size  | 24           |
-| color | currentColor |
-| class |              |
+| Name                         | Default     |
+| ---------------------------- | ----------- |
+| size                         | 15          |
+| class                        |             |
+| ariaLabel                    | <file name> |
+| variation (solid or outline) | outline     |
 
-You can add class to change colors.
+## Variation
+
+The default variation value is outline. Use the `variation` prop to change it to solid.
+
+```html
+<AcademicCap variation="solid" />
+```
 
 ## Size
 
 Use the `size` prop to change the size of icons.
 
 ```html
-<AcademicCapOutline size="30" />
-<AcademicCapOutline size="35" />
-<AcademicCapOutline size="42" />
+<AcademicCap size="30" />
+<AcademicCap size="35" />
+<AcademicCap size="42" />
 ```
 
 ## CSS HEX Colors
@@ -65,8 +68,8 @@ Use the `size` prop to change the size of icons.
 Use the `color` prop to change colors with HEX color code.
 
 ```html
-<AcademicCapOutline color="#ff0000" />
-<AcademicCapOutline color="#00ffd8" />
+<AcademicCap color="#ff0000" />
+<AcademicCap color="#00ffd8" />
 ```
 
 ## CSS framework support
@@ -76,7 +79,7 @@ Use the `class` prop to change colors and add additional css.
 For example, Tailwind CSS:
 
 ```html
-<AcademicCapSolid class="text-pink-700 mr-4" />
+<AcademicCap class="text-pink-700 mr-4" />
 ```
 
 If you use the dark mode on your website with Tailwind CSS, add your dark mode class to the `class` prop.
@@ -84,23 +87,23 @@ If you use the dark mode on your website with Tailwind CSS, add your dark mode c
 Let's use `dark` for the dark mode class as an example.
 
 ```html
-<AcademicCapSolid class="text-pink-700 dark:text-blue-300" />
+<AcademicCap class="text-pink-700 dark:text-blue-300" />
 ```
 
 Bootstrap example:
 
 ```html
-<AcademicCapSolid class="position-absolute top-0 px-1" />
+<AcademicCap class="position-absolute top-0 px-1" />
 ```
 
 
 ## aria-label
 
-All icons have aria-label. For example `AcademicCapSolid` has `aria-label="academic cap"`. 
+All icons have aria-label. For example `AcademicCap` has `aria-label="academic cap"`. 
 Use `ariaLabel` prop to modify the `aria-label` value. 
 
 ```html
-<AcademicCapSolid ariaLabel="red academic cap" class="text-red-500">
+<AcademicCap ariaLabel="red academic cap" class="text-red-500">
 ```
 
 ## Passing down other attributes
@@ -108,7 +111,7 @@ Use `ariaLabel` prop to modify the `aria-label` value.
 You can pass other attibutes as well.
 
 ```html
-<AcademicCapSolid tabindex="0">
+<AcademicCap tabindex="0">
 ```
 
 ## Import all
@@ -120,33 +123,14 @@ Use `import * as Icon from 'svelte-heros`.
   import * as Icon from "svelte-heros";
 </script>
 
-<Icon.ShoppingBagOutline size="30" class="text-red-500" />
-<Icon.SparklesSolid size="40" class="text-blue-700" />
-<Icon.StarOutline size="50" class="text-green-700" />
-<Icon.VolumeUpSolid size="60" class="text-purple-500" />
-<Icon.VolumeUpSolid size="100" class="text-purple-500" tabindex="0" />
+<Icon.ShoppingBag size="30" class="text-red-500" />
+<Icon.Sparkles size="40" class="text-blue-700" />
+<Icon.Star size="50" class="text-green-700" />
+<Icon.VolumeUp size="60" class="text-purple-500" />
+<Icon.VolumeUp size="100" class="text-purple-500" tabindex="0" />
 ```
 
 [REPL](https://svelte.dev/repl/e532f0a6cf7f4d8cae9a9cc2088d234b?version=3.46.4)
-
-## More examples
-
-```html
-<script>
-  import { AcademicCapSolid, AcademicCapOutline } from "svelte-heros";
-</script>
-
-<AcademicCapSolid />
-
-<AcademicCapOutline size="36" class="text-blue-500" />
-
-<AcademicCapSolid size="40" class=" text-green-500" />
-
-<AcademicCapOutline size="48" class="text-red-900" />
-```
-
-[REPL example](https://svelte.dev/repl/fd99dc0efa074ba395b8cb1d0603bcae?version=3.46.4)
-
 
 ## Other icons
 
