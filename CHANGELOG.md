@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.2.0](https://github.com/shinokada/svelte-heros/compare/v2.1.4...v2.2.0) (2022-06-01)
+
+
+### Features
+
+* add variation prop ([efc109b](https://github.com/shinokada/svelte-heros/commit/efc109b372c554ea4dd95d5a7f7dcec524158435))
+
 ### [2.1.4](https://github.com/shinokada/svelte-heros/compare/v2.1.3...v2.1.4) (2022-06-01)
 
 ### [2.1.3](https://github.com/shinokada/svelte-heros/compare/v2.1.2...v2.1.3) (2022-05-30)
