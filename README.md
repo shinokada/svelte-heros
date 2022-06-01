@@ -16,8 +16,6 @@ Hero Icons for Svelte. You can import outline and solid icons without name confl
 
 [Icon names](https://github.com/shinokada/svelte-heros/blob/main/icon-list.md)
 
-See all the icons at [https://heroicons.com/](https://heroicons.com/).
-
 ## Installation
 
 ```sh
@@ -26,7 +24,8 @@ npm i svelte-heros@latest
 
 ## REPL
 
-[Demo](https://svelte.dev/repl/48606ee88712441caebd7d09aa62602c?version=3.48.0)
+- [Demo 1](https://svelte.dev/repl/6b774b2f8ecb402a865fac0a141e3c4a?version=3.48.0)
+- [Demo 2](https://svelte.dev/repl/bf72fabef3c04c808620cfdbee047f46?version=3.48.0)
 
 ## Usage
 
