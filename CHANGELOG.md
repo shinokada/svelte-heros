@@ -6,6 +6,9 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [2.2.0](https://github.com/shinokada/svelte-heros/compare/v2.1.4...v2.2.0) (2022-06-01)
 
+### BREAKING CHANGE
+
+* change icon names without SOLID/OUTLINE
 
 ### Features
 

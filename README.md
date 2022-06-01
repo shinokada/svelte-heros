@@ -37,12 +37,12 @@ npm i svelte-heros@latest
 
 ## Props
 
-| Name                         | Default     |
-| ---------------------------- | ----------- |
-| size                         | 15          |
-| class                        |             |
-| ariaLabel                    | <file name> |
-| variation (solid or outline) | outline     |
+| Name                         | Default   |
+| ---------------------------- | --------- |
+| size                         | 15        |
+| class                        |           |
+| ariaLabel                    | file name |
+| variation (solid or outline) | outline   |
 
 ## Variation
 
@@ -58,8 +58,8 @@ Use the `size` prop to change the size of icons.
 
 ```html
 <AcademicCap size="30" />
-<AcademicCap size="35" />
-<AcademicCap size="42" />
+<AcademicCap size="40" />
+<AcademicCap size="50" />
 ```
 
 ## CSS HEX Colors
