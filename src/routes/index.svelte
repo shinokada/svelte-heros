@@ -1,34 +1,234 @@
 <script>
-  import {
-    AcademicCap,
-    ChevronLeft,
-    CurrencyRupee,
-    MenuAlt1,
-    ThumbDown,
-  } from "$lib";
+  import * as Icon from "$lib";
 </script>
 
-<AcademicCap variation="solid" size="50" />
-<AcademicCap size="50" />
-
-<AcademicCap
-  class="text-blue-500 dark:text-pink-500"
-  variation="solid"
-  size="50"
-/>
-<AcademicCap color="#ff0000" size="50" />
-
-<AcademicCap size="36" class="dark:text-purple-600" />
-<AcademicCap size="36" class="text-red-900 dark:text-yellow-300" />
-
-<AcademicCap size="42" />
-<AcademicCap size="42" />
-<ChevronLeft size="36" class="text-blue-500 " />
-
-<CurrencyRupee size="36" class="text-purple-500" />
-
-<MenuAlt1 size="36" class="text-red-900" />
-
-<ThumbDown size="36" class="dark:text-blue-500 text-yellow-500" />
-
-<ThumbDown size="36" class="dark:text-blue-500 text-yellow-500" />
+<Icon.AcademicCap size="40" />
+<Icon.Adjustments size="40" />
+<Icon.Annotation size="40" />
+<Icon.Archive size="40" />
+<Icon.ArrowCircleDown size="40" />
+<Icon.ArrowCircleLeft size="40" />
+<Icon.ArrowCircleRight size="40" />
+<Icon.ArrowCircleUp size="40" />
+<Icon.ArrowDown size="40" />
+<Icon.ArrowLeft size="40" />
+<Icon.ArrowNarrowDown size="40" />
+<Icon.ArrowNarrowLeft size="40" />
+<Icon.ArrowNarrowRight size="40" />
+<Icon.ArrowNarrowUp size="40" />
+<Icon.ArrowRight size="40" />
+<Icon.ArrowSmDown size="40" />
+<Icon.ArrowSmLeft size="40" />
+<Icon.ArrowSmRight size="40" />
+<Icon.ArrowSmUp size="40" />
+<Icon.ArrowUp size="40" />
+<Icon.ArrowsExpand size="40" />
+<Icon.AtSymbol size="40" />
+<Icon.Backspace size="40" />
+<Icon.BadgeCheck size="40" />
+<Icon.Ban size="40" />
+<Icon.Beaker size="40" />
+<Icon.Bell size="40" />
+<Icon.BookOpen size="40" />
+<Icon.Bookmark size="40" />
+<Icon.BookmarkAlt size="40" />
+<Icon.Briefcase size="40" />
+<Icon.Cake size="40" />
+<Icon.Calculator size="40" />
+<Icon.Calendar size="40" />
+<Icon.Camera size="40" />
+<Icon.Cash size="40" />
+<Icon.ChartBar size="40" />
+<Icon.ChartPie size="40" />
+<Icon.ChartSquareBar size="40" />
+<Icon.Chat size="40" />
+<Icon.ChatAlt size="40" />
+<Icon.ChatAlt2 size="40" />
+<Icon.Check size="40" />
+<Icon.CheckCircle size="40" />
+<Icon.ChevronDoubleDown size="40" />
+<Icon.ChevronDoubleLeft size="40" />
+<Icon.ChevronDoubleRight size="40" />
+<Icon.ChevronDoubleUp size="40" />
+<Icon.ChevronDown size="40" />
+<Icon.ChevronLeft size="40" />
+<Icon.ChevronRight size="40" />
+<Icon.ChevronUp size="40" />
+<Icon.Chip size="40" />
+<Icon.Clipboard size="40" />
+<Icon.ClipboardCheck size="40" />
+<Icon.ClipboardCopy size="40" />
+<Icon.ClipboardList size="40" />
+<Icon.Clock size="40" />
+<Icon.Cloud size="40" />
+<Icon.CloudDownload size="40" />
+<Icon.CloudUpload size="40" />
+<Icon.Code size="40" />
+<Icon.Cog size="40" />
+<Icon.Collection size="40" />
+<Icon.ColorSwatch size="40" />
+<Icon.CreditCard size="40" />
+<Icon.Cube size="40" />
+<Icon.CubeTransparent size="40" />
+<Icon.CurrencyBangladeshi size="40" />
+<Icon.CurrencyDollar size="40" />
+<Icon.CurrencyEuro size="40" />
+<Icon.CurrencyPound size="40" />
+<Icon.CurrencyRupee size="40" />
+<Icon.CurrencyYen size="40" />
+<Icon.CursorClick size="40" />
+<Icon.Database size="40" />
+<Icon.DesktopComputer size="40" />
+<Icon.DeviceMobile size="40" />
+<Icon.DeviceTablet size="40" />
+<Icon.Document size="40" />
+<Icon.DocumentAdd size="40" />
+<Icon.DocumentDownload size="40" />
+<Icon.DocumentDuplicate size="40" />
+<Icon.DocumentRemove size="40" />
+<Icon.DocumentReport size="40" />
+<Icon.DocumentSearch size="40" />
+<Icon.DocumentText size="40" />
+<Icon.DotsCircleHorizontal size="40" />
+<Icon.DotsHorizontal size="40" />
+<Icon.DotsVertical size="40" />
+<Icon.Download size="40" />
+<Icon.Duplicate size="40" />
+<Icon.EmojiHappy size="40" />
+<Icon.EmojiSad size="40" />
+<Icon.Exclamation size="40" />
+<Icon.ExclamationCircle size="40" />
+<Icon.ExternalLink size="40" />
+<Icon.Eye size="40" />
+<Icon.EyeOff size="40" />
+<Icon.FastForward size="40" />
+<Icon.Film size="40" />
+<Icon.Filter size="40" />
+<Icon.FingerPrint size="40" />
+<Icon.Fire size="40" />
+<Icon.Flag size="40" />
+<Icon.Folder size="40" />
+<Icon.FolderAdd size="40" />
+<Icon.FolderDownload size="40" />
+<Icon.FolderOpen size="40" />
+<Icon.FolderRemove size="40" />
+<Icon.Gift size="40" />
+<Icon.Globe size="40" />
+<Icon.GlobeAlt size="40" />
+<Icon.Hand size="40" />
+<Icon.Hashtag size="40" />
+<Icon.Heart size="40" />
+<Icon.Home size="40" />
+<Icon.Identification size="40" />
+<Icon.Inbox size="40" />
+<Icon.InboxIn size="40" />
+<Icon.InformationCircle size="40" />
+<Icon.Key size="40" />
+<Icon.Library size="40" />
+<Icon.LightBulb size="40" />
+<Icon.LightningBolt size="40" />
+<Icon.Link size="40" />
+<Icon.LocationMarker size="40" />
+<Icon.LockClosed size="40" />
+<Icon.LockOpen size="40" />
+<Icon.Login size="40" />
+<Icon.Logout size="40" />
+<Icon.Mail size="40" />
+<Icon.MailOpen size="40" />
+<Icon.Map size="40" />
+<Icon.Menu size="40" />
+<Icon.MenuAlt1 size="40" />
+<Icon.MenuAlt2 size="40" />
+<Icon.MenuAlt3 size="40" />
+<Icon.MenuAlt4 size="40" />
+<Icon.Microphone size="40" />
+<Icon.Minus size="40" />
+<Icon.MinusCircle size="40" />
+<Icon.MinusSm size="40" />
+<Icon.Moon size="40" />
+<Icon.MusicNote size="40" />
+<Icon.Newspaper size="40" />
+<Icon.OfficeBuilding size="40" />
+<Icon.PaperAirplane size="40" />
+<Icon.PaperClip size="40" />
+<Icon.Pause size="40" />
+<Icon.Pencil size="40" />
+<Icon.PencilAlt size="40" />
+<Icon.Phone size="40" />
+<Icon.PhoneIncoming size="40" />
+<Icon.PhoneMissedCall size="40" />
+<Icon.PhoneOutgoing size="40" />
+<Icon.Photograph size="40" />
+<Icon.Play size="40" />
+<Icon.Plus size="40" />
+<Icon.PlusCircle size="40" />
+<Icon.PlusSm size="40" />
+<Icon.PresentationChartBar size="40" />
+<Icon.PresentationChartLine size="40" />
+<Icon.Printer size="40" />
+<Icon.Puzzle size="40" />
+<Icon.Qrcode size="40" />
+<Icon.QuestionMarkCircle size="40" />
+<Icon.ReceiptRefund size="40" />
+<Icon.ReceiptTax size="40" />
+<Icon.Refresh size="40" />
+<Icon.Reply size="40" />
+<Icon.Rewind size="40" />
+<Icon.Rss size="40" />
+<Icon.Save size="40" />
+<Icon.SaveAs size="40" />
+<Icon.Scale size="40" />
+<Icon.Scissors size="40" />
+<Icon.Search size="40" />
+<Icon.SearchCircle size="40" />
+<Icon.Selector size="40" />
+<Icon.Server size="40" />
+<Icon.Share size="40" />
+<Icon.ShieldCheck size="40" />
+<Icon.ShieldExclamation size="40" />
+<Icon.ShoppingBag size="40" />
+<Icon.ShoppingCart size="40" />
+<Icon.SortAscending size="40" />
+<Icon.SortDescending size="40" />
+<Icon.Sparkles size="40" />
+<Icon.Speakerphone size="40" />
+<Icon.Star size="40" />
+<Icon.StatusOffline size="40" />
+<Icon.StatusOnline size="40" />
+<Icon.Stop size="40" />
+<Icon.Sun size="40" />
+<Icon.Support size="40" />
+<Icon.SwitchHorizontal size="40" />
+<Icon.SwitchVertical size="40" />
+<Icon.Table size="40" />
+<Icon.Tag size="40" />
+<Icon.Template size="40" />
+<Icon.Terminal size="40" />
+<Icon.ThumbDown size="40" />
+<Icon.ThumbUp size="40" />
+<Icon.Ticket size="40" />
+<Icon.Translate size="40" />
+<Icon.Trash size="40" />
+<Icon.TrendingDown size="40" />
+<Icon.TrendingUp size="40" />
+<Icon.Truck size="40" />
+<Icon.Upload size="40" />
+<Icon.User size="40" />
+<Icon.UserAdd size="40" />
+<Icon.UserCircle size="40" />
+<Icon.UserGroup size="40" />
+<Icon.UserRemove size="40" />
+<Icon.Users size="40" />
+<Icon.Variable size="40" />
+<Icon.VideoCamera size="40" />
+<Icon.ViewBoards size="40" />
+<Icon.ViewGrid size="40" />
+<Icon.ViewGridAdd size="40" />
+<Icon.ViewList size="40" />
+<Icon.VolumeOff size="40" />
+<Icon.VolumeUp size="40" />
+<Icon.Wifi size="40" />
+<Icon.X size="40" />
+<Icon.XCircle size="40" />
+<Icon.ZoomIn size="40" />
+<Icon.ZoomOut size="40" />
