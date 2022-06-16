@@ -1,5 +1,5 @@
 <script>
-  import * as Icon from "$lib";
+	import * as Icon from '$lib';
 </script>
 
 <Icon.AcademicCap size="40" variation="solid" />

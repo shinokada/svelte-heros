@@ -2,7 +2,6 @@
 
 Hero Icons for Svelte. You can import outline and solid icons without name conflict. Svlete-Heros support major CSS framework. You can add additional CSS using the `class` props.
 
-
 <p align="center">
 <img width="450" src="https://raw.githubusercontent.com/shinokada/svelte-heros/main/static/images/heros1.webp" />
 <img width="450" src="https://raw.githubusercontent.com/shinokada/svelte-heros/main/static/images/heros2.webp" />
@@ -30,9 +29,7 @@ npm i svelte-heros@latest
 ## Usage
 
 ```js
-<script>
-  import { AcademicCap } from "svelte-heros";
-</script>
+<script>import {AcademicCap} from "svelte-heros";</script>
 ```
 
 ## Props
@@ -67,8 +64,7 @@ Use the `size` prop to change the size of icons.
 Use the `color` prop to change colors with HEX color code.
 
 ```html
-<AcademicCap color="#ff0000" />
-<AcademicCap color="#00ffd8" />
+<AcademicCap color="#ff0000" /> <AcademicCap color="#00ffd8" />
 ```
 
 ## CSS framework support
@@ -95,14 +91,13 @@ Bootstrap example:
 <AcademicCap class="position-absolute top-0 px-1" />
 ```
 
-
 ## aria-label
 
-All icons have aria-label. For example `AcademicCap` has `aria-label="academic cap"`. 
-Use `ariaLabel` prop to modify the `aria-label` value. 
+All icons have aria-label. For example `AcademicCap` has `aria-label="academic cap"`.
+Use `ariaLabel` prop to modify the `aria-label` value.
 
 ```html
-<AcademicCap ariaLabel="red academic cap" class="text-red-500">
+<AcademicCap ariaLabel="red academic cap" class="text-red-500"></AcademicCap>
 ```
 
 ## Passing down other attributes
@@ -110,7 +105,7 @@ Use `ariaLabel` prop to modify the `aria-label` value.
 You can pass other attibutes as well.
 
 ```html
-<AcademicCap tabindex="0">
+<AcademicCap tabindex="0"></AcademicCap>
 ```
 
 ## Import all
@@ -119,7 +114,7 @@ Use `import * as Icon from 'svelte-heros`.
 
 ```html
 <script>
-  import * as Icon from "svelte-heros";
+	import * as Icon from 'svelte-heros';
 </script>
 
 <Icon.ShoppingBag size="30" class="text-red-500" />
