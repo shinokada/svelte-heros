@@ -2,12 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-### [2.2.4](https://github.com/shinokada/svelte-heros/compare/v2.2.3...v2.2.4) (2022-06-16)
+### [2.2.5](https://github.com/shinokada/svelte-heros/compare/v2.2.4...v2.2.5) (2022-06-16)
 
+### [2.2.4](https://github.com/shinokada/svelte-heros/compare/v2.2.3...v2.2.4) (2022-06-16)
 
 ### Bug Fixes
 
-* add reactivity to switch by adding $: ([7e1acec](https://github.com/shinokada/svelte-heros/commit/7e1acecd0649274d3d30762043ec56e48ee3bbb5))
+- add reactivity to switch by adding $: ([7e1acec](https://github.com/shinokada/svelte-heros/commit/7e1acecd0649274d3d30762043ec56e48ee3bbb5))
 
 ### [2.2.3](https://github.com/shinokada/svelte-heros/compare/v2.2.2...v2.2.3) (2022-06-02)
 
