@@ -126,6 +126,18 @@ Use `import * as Icon from 'svelte-heros`.
 
 [REPL](https://svelte.dev/repl/e532f0a6cf7f4d8cae9a9cc2088d234b?version=3.46.4)
 
+
+## Dynamically change the variation
+
+```html
+<script>
+	import { Map } from 'svelte-heros';
+	let isSolid = false;
+</script>
+
+<Map size="50" on:click={() => (isSolid = !isSolid)} variation={isSolid ? 'solid' : 'outline'} />
+```
+
 ## Other icons
 
 - [Svelte-Icon-Sets](https://svelte-svg-icons.vercel.app/)

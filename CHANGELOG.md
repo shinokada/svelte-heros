@@ -4,10 +4,9 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [2.3.0](https://github.com/shinokada/svelte-heros/compare/v2.2.5...v2.3.0) (2022-06-17)
 
-
 ### Features
 
-* add on:click ([101cfe2](https://github.com/shinokada/svelte-heros/commit/101cfe2df69ec4874fc2dc778c65d99548d17c08))
+- add on:click ([101cfe2](https://github.com/shinokada/svelte-heros/commit/101cfe2df69ec4874fc2dc778c65d99548d17c08))
 
 ### [2.2.5](https://github.com/shinokada/svelte-heros/compare/v2.2.4...v2.2.5) (2022-06-16)
 
