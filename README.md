@@ -1,6 +1,6 @@
 # Svelte-heros
 
-Hero Icons for Svelte. You can import outline and solid icons without name conflict. Svlete-Heros support major CSS framework. You can add additional CSS using the `class` props.
+Hero Icons for Svelte. You can select outline and solid icons using the variation props. Svlete-Heros support major CSS framework. You can add additional CSS using the `class` props.
 
 <p align="center">
 <img width="450" src="https://raw.githubusercontent.com/shinokada/svelte-heros/main/static/images/heros1.webp" />
@@ -125,7 +125,6 @@ Use `import * as Icon from 'svelte-heros`.
 ```
 
 [REPL](https://svelte.dev/repl/e532f0a6cf7f4d8cae9a9cc2088d234b?version=3.46.4)
-
 
 ## Dynamically change the variation
 
