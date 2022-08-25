@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.3.5](https://github.com/shinokada/svelte-heros/compare/v2.3.4...v2.3.5) (2022-08-25)
+
 ### [2.3.4](https://github.com/shinokada/svelte-heros/compare/v2.3.3...v2.3.4) (2022-08-25)
 
 ### [2.3.3](https://github.com/shinokada/svelte-heros/compare/v2.3.2...v2.3.3) (2022-08-01)
