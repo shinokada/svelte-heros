@@ -32,7 +32,7 @@ npm i svelte-heros@latest
 
 ```html
 <script>
-  import {AcademicCap} from "svelte-heros";
+	import { AcademicCap } from 'svelte-heros';
 </script>
 ```
 
@@ -111,7 +111,6 @@ You can pass other attibutes as well.
 ```html
 <AcademicCap tabindex="0" />
 ```
-
 
 ## Using svelte:component
 
