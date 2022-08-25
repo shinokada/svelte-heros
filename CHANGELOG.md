@@ -4,10 +4,9 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [2.3.3](https://github.com/shinokada/svelte-heros/compare/v2.3.2...v2.3.3) (2022-08-01)
 
-
 ### Bug Fixes
 
-* viewBox for outlined and solid are different in the original ([ccf3c22](https://github.com/shinokada/svelte-heros/commit/ccf3c22a001831aaa159ab974288fdc8d17ba7b2))
+- viewBox for outlined and solid are different in the original ([ccf3c22](https://github.com/shinokada/svelte-heros/commit/ccf3c22a001831aaa159ab974288fdc8d17ba7b2))
 
 ### [2.3.2](https://github.com/shinokada/svelte-heros/compare/v2.3.1...v2.3.2) (2022-06-26)
 

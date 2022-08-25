@@ -1,6 +1,8 @@
 # Svelte-heros
 
-Hero Icons for Svelte. You can select outline and solid icons using the variation props. Svlete-Heros support major CSS framework. You can add additional CSS using the `class` props.
+New version, [Svelte-Heros-v2](https://github.com/shinokada/svelte-heros-v2) is out.
+
+Hero Icons v1 for Svelte. You can select outline and solid icons using the variation props. Svlete-Heros support major CSS framework. You can add additional CSS using the `class` props.
 
 <p align="center">
 <img width="450" src="https://raw.githubusercontent.com/shinokada/svelte-heros/main/static/images/heros1.webp" />
@@ -28,15 +30,17 @@ npm i svelte-heros@latest
 
 ## Usage
 
-```js
-<script>import {AcademicCap} from "svelte-heros";</script>
+```html
+<script>
+  import {AcademicCap} from "svelte-heros";
+</script>
 ```
 
 ## Props
 
 | Name                         | Default   |
 | ---------------------------- | --------- |
-| size                         | 15        |
+| size                         | 24        |
 | class                        |           |
 | ariaLabel                    | file name |
 | variation (solid or outline) | outline   |
@@ -97,7 +101,7 @@ All icons have aria-label. For example `AcademicCap` has `aria-label="academic c
 Use `ariaLabel` prop to modify the `aria-label` value.
 
 ```html
-<AcademicCap ariaLabel="red academic cap" class="text-red-500"></AcademicCap>
+<AcademicCap ariaLabel="red academic cap" class="text-red-500" />
 ```
 
 ## Passing down other attributes
@@ -105,7 +109,18 @@ Use `ariaLabel` prop to modify the `aria-label` value.
 You can pass other attibutes as well.
 
 ```html
-<AcademicCap tabindex="0"></AcademicCap>
+<AcademicCap tabindex="0" />
+```
+
+
+## Using svelte:component
+
+```html
+<script>
+	import { AcademicCap } from 'svelte-heros-v2';
+</script>
+
+<svelte:component this="{AcademicCap}" />
 ```
 
 ## Import all
