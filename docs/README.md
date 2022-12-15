@@ -1,4 +1,15 @@
-# Svelte-heros
+<h1 align="center">Svelte-heros</h1>
+
+<p align="center">
+<a href="https://shinokada.github.io/svelte-heros/">Svelte-heros</a>
+</p>
+
+<p align="center">
+<a href="https://www.npmjs.com/package/svelte-heros" rel="nofollow"><img src="https://img.shields.io/npm/v/svelte-heros" alt="npm"></a>
+<a href="https://twitter.com/shinokada" rel="nofollow"><img src="https://img.shields.io/badge/created%20by-@shinokada-4BBAAB.svg" alt="Created by Shin Okada"></a>
+<a href="https://www.apache.org/licenses/" rel="nofollow"><img src="https://img.shields.io/github/license/shinokada/svelte-heros" alt="License"></a>
+<a href="https://www.npmjs.com/package/svelte-heros" rel="nofollow"><img src="https://img.shields.io/npm/dw/svelte-heros.svg" alt="npm"></a>
+</p>
 
 New version, [Svelte-Heros-v2](https://github.com/shinokada/svelte-heros-v2) is out.
 
@@ -9,19 +20,15 @@ Hero Icons v1 for Svelte. You can select outline and solid icons using the varia
 <img width="450" src="https://raw.githubusercontent.com/shinokada/svelte-heros/main/static/images/heros2.webp" />
 </p>
 
-## Original source
-
-[tailwindlabs/heroicons](https://github.com/tailwindlabs/heroicons)
-
-## List of icons
-
-[Icon names](https://github.com/shinokada/svelte-heros/blob/main/icon-list.md)
-
 ## Installation
 
 ```sh
 npm i svelte-heros@latest
 ```
+
+## List of icons
+
+[Icon names](https://github.com/shinokada/svelte-heros/blob/main/docs/icon-list.md)
 
 ## REPL
 
@@ -150,6 +157,10 @@ Use `import * as Icon from 'svelte-heros`.
 
 <Map size="50" on:click={() => (isSolid = !isSolid)} variation={isSolid ? 'solid' : 'outline'} />
 ```
+
+## Original source
+
+[tailwindlabs/heroicons](https://github.com/tailwindlabs/heroicons)
 
 ## Other icons
 
