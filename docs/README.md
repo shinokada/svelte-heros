@@ -7,11 +7,11 @@
 <p align="center">
 <a href="https://www.npmjs.com/package/svelte-heros" rel="nofollow"><img src="https://img.shields.io/npm/v/svelte-heros" alt="npm"></a>
 <a href="https://twitter.com/shinokada" rel="nofollow"><img src="https://img.shields.io/badge/created%20by-@shinokada-4BBAAB.svg" alt="Created by Shin Okada"></a>
-<a href="https://www.apache.org/licenses/" rel="nofollow"><img src="https://img.shields.io/github/license/shinokada/svelte-heros" alt="License"></a>
+<a href="http://www.apache.org/licenses/" rel="nofollow"><img src="https://img.shields.io/github/license/shinokada/svelte-heros" alt="License"></a>
 <a href="https://www.npmjs.com/package/svelte-heros" rel="nofollow"><img src="https://img.shields.io/npm/dw/svelte-heros.svg" alt="npm"></a>
 </p>
 
-New version, [Svelte-Heros-v2](https://github.com/shinokada/svelte-heros-v2) is out.
+New version, [Svelte-Heros-v2](https://shinokada.github.io/svelte-heros-v2) is out.
 
 Hero Icons v1 for Svelte. You can select outline and solid icons using the variation props. Svlete-Heros support major CSS framework. You can add additional CSS using the `class` props.
 
@@ -39,7 +39,7 @@ npm i svelte-heros@latest
 
 ```html
 <script>
-	import { AcademicCap } from 'svelte-heros';
+  import { AcademicCap } from 'svelte-heros';
 </script>
 ```
 
@@ -123,7 +123,7 @@ You can pass other attibutes as well.
 
 ```html
 <script>
-	import { AcademicCap } from 'svelte-heros-v2';
+  import { AcademicCap } from 'svelte-heros-v2';
 </script>
 
 <svelte:component this="{AcademicCap}" />
@@ -135,7 +135,7 @@ Use `import * as Icon from 'svelte-heros`.
 
 ```html
 <script>
-	import * as Icon from 'svelte-heros';
+  import * as Icon from 'svelte-heros';
 </script>
 
 <Icon.ShoppingBag size="30" class="text-red-500" />
@@ -151,8 +151,8 @@ Use `import * as Icon from 'svelte-heros`.
 
 ```html
 <script>
-	import { Map } from 'svelte-heros';
-	let isSolid = false;
+  import { Map } from 'svelte-heros';
+  let isSolid = false;
 </script>
 
 <Map size="50" on:click={() => (isSolid = !isSolid)} variation={isSolid ? 'solid' : 'outline'} />

@@ -5,17 +5,17 @@ import { render, screen, cleanup } from '@testing-library/svelte';
 
 afterEach(() => cleanup());
 beforeEach(() => {
-	render(AcademicCap, { size: '40' });
+  render(AcademicCap, { size: '40' });
 });
 
 test('should mount the path element', async () => {
-	const pathElement = screen.getByLabelText('svg-path');
+  const pathElement = screen.getByLabelText('svg-path');
 
-	expect(pathElement).toBeInTheDocument();
+  expect(pathElement).toBeInTheDocument();
 });
 
 test('should have the correct d attribute passed in from baseEdgeProps', async () => {
-	const pathElement = screen.getByLabelText('svg-path');
+  const pathElement = screen.getByLabelText('svg-path');
 
-	expect(pathElement).toHaveAttribute('size', '40');
+  expect(pathElement).toHaveAttribute('size', '40');
 });
