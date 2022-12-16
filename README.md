@@ -28,12 +28,12 @@ npm i svelte-heros@latest
 
 ## List of icons
 
-[Icon names](https://github.com/shinokada/svelte-heros/blob/main/docs/icon-list.md)
+[Icon names](https://github.com/shinokada/svelte-heros/blob/main/icon-list.md)
 
 ## REPL
 
-- [Demo 1](https://svelte.dev/repl/6b774b2f8ecb402a865fac0a141e3c4a?version=3.48.0)
-- [Demo 2](https://svelte.dev/repl/bf72fabef3c04c808620cfdbee047f46?version=3.48.0)
+- [Demo 1](https://svelte.dev/repl/6b774b2f8ecb402a865fac0a141e3c4a)
+- [Demo 2](https://svelte.dev/repl/bf72fabef3c04c808620cfdbee047f46)
 
 ## Usage
 
@@ -145,7 +145,7 @@ Use `import * as Icon from 'svelte-heros`.
 <Icon.VolumeUp size="100" class="text-purple-500" tabindex="0" />
 ```
 
-[REPL](https://svelte.dev/repl/e532f0a6cf7f4d8cae9a9cc2088d234b?version=3.46.4)
+[REPL](https://svelte.dev/repl/e532f0a6cf7f4d8cae9a9cc2088d234b)
 
 ## Dynamically change the variation
 
