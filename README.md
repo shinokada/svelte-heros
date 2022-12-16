@@ -1,4 +1,4 @@
-<h1 align="center">Svelte-heros</h1>
+<h1 align="center">Svelte-Heros</h1>
 
 <p align="center">
 <a href="https://shinokada.github.io/svelte-heros/">Svelte-heros</a>
