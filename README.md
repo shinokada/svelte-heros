@@ -1,7 +1,7 @@
 <h1 align="center">Svelte-Heros</h1>
 
 <p align="center">
-<a href="https://shinokada.github.io/svelte-heros/">Svelte-heros</a>
+<a href="https://svelte-heros.codewithshin.com/">Svelte-heros</a>
 </p>
 
 <p align="center">
@@ -11,7 +11,7 @@
 <a href="https://www.npmjs.com/package/svelte-heros" rel="nofollow"><img src="https://img.shields.io/npm/dw/svelte-heros.svg" alt="npm"></a>
 </p>
 
-New version, [Svelte-Heros-v2](https://shinokada.github.io/svelte-heros-v2) is out.
+New version, [Svelte-Heros-v2](https://svelte-heros-v2.codewithshin.com) is out.
 
 Hero Icons v1 for Svelte. You can select outline and solid icons using the variation props. Svlete-Heros support major CSS framework. You can add additional CSS using the `class` props.
 
