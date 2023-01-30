@@ -29,7 +29,7 @@ npm i svelte-heros@latest
 
 ## List of icons
 
-[Icon names](https://github.com/shinokada/svelte-heros/blob/main/icon-list.md)
+[Icon names](/icon-list.md)
 
 ## REPL
 
