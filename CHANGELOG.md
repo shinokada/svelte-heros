@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.5.0](https://github.com/shinokada/svelte-heros/compare/v2.4.3...v2.5.0) (2023-01-30)
+
+
+### Features
+
+* add pwa ([3b4c0f5](https://github.com/shinokada/svelte-heros/commit/3b4c0f53aaeb7b672daf4ce145ee868a92a64bb6))
+
 ### [2.4.3](https://github.com/shinokada/svelte-heros/compare/v2.4.2...v2.4.3) (2022-12-25)
 
 ### Bug Fixes
