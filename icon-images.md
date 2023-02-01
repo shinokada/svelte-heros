@@ -6,7 +6,6 @@
 <img width="650" src="/static/images/heros-optimized.png" />
 </p>
 
-
 ## Solid color
 
 <p align="center">
