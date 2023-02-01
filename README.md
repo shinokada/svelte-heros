@@ -17,8 +17,7 @@ New version, [Svelte-Heros-v2](https://svelte-heros-v2.codewithshin.com) is out.
 Hero Icons v1 for Svelte. You can select outline and solid icons using the variation props. Svlete-Heros support major CSS framework. You can add additional CSS using the `class` props.
 
 <p align="center">
-<img width="450" src="https://raw.githubusercontent.com/shinokada/svelte-heros/main/static/images/heros1.webp" />
-<img width="450" src="https://raw.githubusercontent.com/shinokada/svelte-heros/main/static/images/heros2.webp" />
+<img width="650" src="/static/images/heros-optimized.png" />
 </p>
 
 ## Installation
@@ -27,9 +26,13 @@ Hero Icons v1 for Svelte. You can select outline and solid icons using the varia
 npm i svelte-heros@latest
 ```
 
-## List of icons
+## Icon names
 
 [Icon names](/icon-list.md)
+
+## Icon images
+
+[Icon images](/icon-images.md)
 
 ## REPL
 
