@@ -2,12 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-### [2.5.3](https://github.com/shinokada/svelte-heros/compare/v2.5.2...v2.5.3) (2023-02-01)
+## [2.6.0](https://github.com/shinokada/svelte-heros/compare/v2.5.3...v2.6.0) (2023-02-03)
 
+
+### Features
+
+* new icons and update pages ([20bc7a5](https://github.com/shinokada/svelte-heros/commit/20bc7a5e32988a0347598b9ac515eae2edb75eeb))
+
+### [2.5.3](https://github.com/shinokada/svelte-heros/compare/v2.5.2...v2.5.3) (2023-02-01)
 
 ### Bug Fixes
 
-* badges target, height, and add links to crossOriginLinks ([dc0d601](https://github.com/shinokada/svelte-heros/commit/dc0d60134cf09a158ec37c030841fc32b50cdcdb))
+- badges target, height, and add links to crossOriginLinks ([dc0d601](https://github.com/shinokada/svelte-heros/commit/dc0d60134cf09a158ec37c030841fc32b50cdcdb))
 
 ### [2.5.2](https://github.com/shinokada/svelte-heros/compare/v2.5.1...v2.5.2) (2023-02-01)
 
