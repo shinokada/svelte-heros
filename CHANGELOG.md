@@ -4,10 +4,9 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [2.6.0](https://github.com/shinokada/svelte-heros/compare/v2.5.3...v2.6.0) (2023-02-03)
 
-
 ### Features
 
-* new icons and update pages ([20bc7a5](https://github.com/shinokada/svelte-heros/commit/20bc7a5e32988a0347598b9ac515eae2edb75eeb))
+- new icons and update pages ([20bc7a5](https://github.com/shinokada/svelte-heros/commit/20bc7a5e32988a0347598b9ac515eae2edb75eeb))
 
 ### [2.5.3](https://github.com/shinokada/svelte-heros/compare/v2.5.2...v2.5.3) (2023-02-01)
 

@@ -6,7 +6,6 @@
   };
 </script>
 
-
 <h1>Solid</h1>
 <h2>Color</h2>
 <Icon.AcademicCap size="40" color={random_hex_color_code()} variation="solid" />
@@ -301,7 +300,6 @@
 <Icon.WrenchScrewdriver size="40" color={random_hex_color_code()} variation="solid" />
 <Icon.XCircle size="40" color={random_hex_color_code()} variation="solid" />
 <Icon.XMark size="40" color={random_hex_color_code()} variation="solid" />
-
 
 <h2>Black & White</h2>
 <Icon.AcademicCap size="40" variation="solid" />
