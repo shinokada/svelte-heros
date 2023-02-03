@@ -1,26 +1,25 @@
 <script lang="ts">
-  export let size = '24';
-  export let color = 'currentColor';
-  export let variation: 'solid' | 'outline' = 'outline';
+  export let size = "24";
+  export let color="currentColor";
+  export let variation: "solid" | "outline" = "outline";
   let viewBox: string;
   let svgpath: string;
-  let svgoutline = `<path d="M14 5L21 12M21 12L14 19M21 12L3 12" stroke="${color}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> `;
-  let svgsolid = `<path fill-rule="evenodd" clip-rule="evenodd" d="M10.2929 3.29289C10.6834 2.90237 11.3166 2.90237 11.7071 3.29289L17.7071 9.29289C18.0976 9.68342 18.0976 10.3166 17.7071 10.7071L11.7071 16.7071C11.3166 17.0976 10.6834 17.0976 10.2929 16.7071C9.90237 16.3166 9.90237 15.6834 10.2929 15.2929L14.5858 11L3 11C2.44772 11 2 10.5523 2 10C2 9.44772 2.44772 9 3 9H14.5858L10.2929 4.70711C9.90237 4.31658 9.90237 3.68342 10.2929 3.29289Z" fill="${color}"/> `;
+  let svgoutline = `<path d="M13.5 4.5L21 12M21 12L13.5 19.5M21 12H3" stroke="${color}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> `;
+  let svgsolid = `<path fill-rule="evenodd" clip-rule="evenodd" d="M12.9697 3.96967C13.2626 3.67678 13.7374 3.67678 14.0303 3.96967L21.5303 11.4697C21.671 11.6103 21.75 11.8011 21.75 12C21.75 12.1989 21.671 12.3897 21.5303 12.5303L14.0303 20.0303C13.7374 20.3232 13.2626 20.3232 12.9697 20.0303C12.6768 19.7374 12.6768 19.2626 12.9697 18.9697L19.1893 12.75H3C2.58579 12.75 2.25 12.4142 2.25 12C2.25 11.5858 2.58579 11.25 3 11.25H19.1893L12.9697 5.03033C12.6768 4.73744 12.6768 4.26256 12.9697 3.96967Z" fill="${color}"/> `;
   $: switch (variation) {
-    case 'outline':
-      svgpath = svgoutline;
-      viewBox = '0 0 24 24';
-      break;
-    case 'solid':
-      svgpath = svgsolid;
-      viewBox = '0 0 20 20';
-      break;
-    default:
-      svgpath = svgoutline;
-      viewBox = '0 0 24 24';
-  }
-  export let ariaLabel = 'arrow right';
-</script>
+		case 'outline':
+			svgpath = svgoutline;
+			viewBox = '0 0 24 24';
+			break;
+		case 'solid':
+			svgpath = svgsolid;
+			viewBox = '0 0 20 20';
+			break;
+		default:
+			svgpath = svgoutline;
+			viewBox = '0 0 24 24';
+	}
+export let ariaLabel="arrow right" </script>
 
 <svg
   xmlns="http://www.w3.org/2000/svg"
@@ -29,9 +28,9 @@
   class={$$props.class}
   {...$$restProps}
   aria-label={ariaLabel}
-  fill="none"
-  {viewBox}
-  stroke-width="2"
+  fill="none" 
+ {viewBox}
+  stroke-width="2" 
   on:click
 >
   {@html svgpath}
