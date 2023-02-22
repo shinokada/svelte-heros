@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.9.0](https://github.com/shinokada/svelte-heros/compare/v2.6.0...v2.9.0) (2023-02-22)
+
+
+### Features
+
+* add microsoft webmaster tools meta tag ([0de5c6f](https://github.com/shinokada/svelte-heros/commit/0de5c6fe784b34f198165fe7559f781ee9dea370))
+* new svelte packaging system ([a3d894e](https://github.com/shinokada/svelte-heros/commit/a3d894e7b29c45cfa382c63f4362820cdf7570c9))
+
+
+### Bug Fixes
+
+* update index.html ([fc7996c](https://github.com/shinokada/svelte-heros/commit/fc7996c67dae6437017a657df2361e62b5e46bc4))
+
 ## [2.7.0](https://github.com/shinokada/svelte-heros/compare/v2.6.0...v2.7.0) (2023-02-22)
 
 ### Features
