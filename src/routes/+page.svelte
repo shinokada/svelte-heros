@@ -242,7 +242,7 @@
 <Icon.PresentationChartLine size="40" color={random_hex_color_code()} variation="solid" />
 <Icon.Printer size="40" color={random_hex_color_code()} variation="solid" />
 <Icon.PuzzlePiece size="40" color={random_hex_color_code()} variation="solid" />
-<Icon.QrCode size="40" color={random_hex_color_code()} variation="solid" />
+<Icon.Qrcode size="40" color={random_hex_color_code()} variation="solid" />
 <Icon.QuestionMarkCircle size="40" color={random_hex_color_code()} variation="solid" />
 <Icon.QueueList size="40" color={random_hex_color_code()} variation="solid" />
 <Icon.Radio size="40" color={random_hex_color_code()} variation="solid" />
@@ -536,7 +536,7 @@
 <Icon.PresentationChartLine size="40" variation="solid" />
 <Icon.Printer size="40" variation="solid" />
 <Icon.PuzzlePiece size="40" variation="solid" />
-<Icon.QrCode size="40" variation="solid" />
+<Icon.Qrcode size="40" variation="solid" />
 <Icon.QuestionMarkCircle size="40" variation="solid" />
 <Icon.QueueList size="40" variation="solid" />
 <Icon.Radio size="40" variation="solid" />
