@@ -12,6 +12,7 @@
       break;
     case 'solid':
       svgpath = svgsolid;
+      break;
     default:
       svgpath = svgoutline;
   }
