@@ -1,6 +1,6 @@
 {
   "name": "svelte-heros",
-  "version": "2.9.1",
+  "version": "2.9.2",
   "description": "Svelte + TailwindCSS + HeroIcons components",
   "author": {
     "name": "Shinichi Okada",

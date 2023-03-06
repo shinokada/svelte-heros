@@ -2,12 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-### [2.9.1](https://github.com/shinokada/svelte-heros/compare/v2.9.0...v2.9.1) (2023-02-24)
+### [2.9.2](https://github.com/shinokada/svelte-heros/compare/v2.9.1...v2.9.2) (2023-03-06)
 
+### [2.9.1](https://github.com/shinokada/svelte-heros/compare/v2.9.0...v2.9.1) (2023-02-24)
 
 ### Bug Fixes
 
-* QrCode to Qrcode ([24bf190](https://github.com/shinokada/svelte-heros/commit/24bf19060b16dd993c3b5136b4e5e715de90e8fc))
+- QrCode to Qrcode ([24bf190](https://github.com/shinokada/svelte-heros/commit/24bf19060b16dd993c3b5136b4e5e715de90e8fc))
 
 ## [2.9.0](https://github.com/shinokada/svelte-heros/compare/v2.6.0...v2.9.0) (2023-02-22)
 
