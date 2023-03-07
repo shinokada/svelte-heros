@@ -49,6 +49,40 @@ npm i svelte-heros@latest
 </script>
 ```
 
+
+## Faster compiling
+
+For faster compilation, you can import the icon directly.
+
+```html
+<script>
+  import AcademicCap from 'svelte-heros/AcademicCap.svelte';
+</script>
+
+<AcademicCap />
+```
+
+If you are TypeScript user, **this require `"typescript": "^5.0.0"`.**
+
+As of March 2023, the `typescript@beta` version is now available:
+
+```sh
+pnpm i -D typescript@beta
+```
+
+To avoid any complaints from the editor, add `node16` or `nodenext` to `moduleResolution` in your tsconfig.json file.
+
+```json
+{
+  //...
+  "compilerOptions": {
+    // ...
+    "moduleResolution": "nodenext"
+  }
+}
+```
+
+
 ## Props
 
 | Name                         | Default   |
@@ -115,6 +149,14 @@ Use `ariaLabel` prop to modify the `aria-label` value.
 
 ```html
 <AcademicCap ariaLabel="red academic cap" class="text-red-500" />
+```
+
+## Unfocusable icon
+
+If you want to make an icon unfocusable, add `tabindex="-1"`.
+
+```html
+<AcademicCap tabindex="-1" />
 ```
 
 ## Passing down other attributes
