@@ -4,10 +4,9 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [3.1.0](https://github.com/shinokada/svelte-heros/compare/v2.9.2...v3.1.0) (2023-03-07)
 
-
 ### Features
 
-* add script add-exports and update README ([e0f76f9](https://github.com/shinokada/svelte-heros/commit/e0f76f9ed58084edddc62d9b5499b138a414cc49))
+- add script add-exports and update README ([e0f76f9](https://github.com/shinokada/svelte-heros/commit/e0f76f9ed58084edddc62d9b5499b138a414cc49))
 
 ### [2.9.2](https://github.com/shinokada/svelte-heros/compare/v2.9.1...v2.9.2) (2023-03-06)
 
