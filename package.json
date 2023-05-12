@@ -1,6 +1,6 @@
 {
   "name": "svelte-heros",
-  "version": "3.3.0",
+  "version": "3.3.1",
   "description": "Svelte + TailwindCSS + HeroIcons components",
   "author": {
     "name": "Shinichi Okada",
@@ -1006,9 +1006,9 @@
       "types": "./dist/PuzzlePiece.svelte.d.ts",
       "svelte": "./dist/PuzzlePiece.svelte"
     },
-    "./Qrcode.svelte": {
-      "types": "./dist/Qrcode.svelte.d.ts",
-      "svelte": "./dist/Qrcode.svelte"
+    "./QrCode.svelte": {
+      "types": "./dist/QrCode.svelte.d.ts",
+      "svelte": "./dist/QrCode.svelte"
     },
     "./QuestionMarkCircle.svelte": {
       "types": "./dist/QuestionMarkCircle.svelte.d.ts",
