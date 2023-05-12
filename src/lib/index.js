@@ -232,7 +232,7 @@ export { default as PresentationChartBar } from './PresentationChartBar.svelte';
 export { default as PresentationChartLine } from './PresentationChartLine.svelte';
 export { default as Printer } from './Printer.svelte';
 export { default as PuzzlePiece } from './PuzzlePiece.svelte';
-export { default as Qrcode } from './Qrcode.svelte';
+export { default as QrCode } from './QrCode.svelte';
 export { default as QuestionMarkCircle } from './QuestionMarkCircle.svelte';
 export { default as QueueList } from './QueueList.svelte';
 export { default as Radio } from './Radio.svelte';

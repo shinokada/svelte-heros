@@ -159,6 +159,20 @@ If you want to make an icon unfocusable, add `tabindex="-1"`.
 <AcademicCap tabindex="-1" />
 ```
 
+## Events
+
+All icons have the following events:
+
+```
+on:click
+on:mouseenter
+on:mouseleave
+on:mouseover
+on:mouseout
+on:blur
+on:focus
+```
+
 ## Passing down other attributes
 
 You can pass other attibutes as well.

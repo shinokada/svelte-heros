@@ -1,5 +1,3 @@
-# Icon names
-
 - AcademicCap.svelte
 - AdjustmentsHorizontal.svelte
 - AdjustmentsVertical.svelte
@@ -292,7 +290,4 @@
 - WrenchScrewdriver.svelte
 - XCircle.svelte
 - XMark.svelte
-
-## Back to Home
-
-[Back to Home](/)
+- index.js
