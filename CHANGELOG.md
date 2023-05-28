@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.5.0](https://github.com/shinokada/svelte-heros/compare/v3.3.1...v3.5.0) (2023-05-28)
+
+
+### Features
+
+* without backticks for XSS ([077e634](https://github.com/shinokada/svelte-heros/commit/077e634912a4af872033571692ac5d9420f30c4f))
+
 ### [3.3.1](https://github.com/shinokada/svelte-heros/compare/v3.3.0...v3.3.1) (2023-05-12)
 
 ## [3.3.0](https://github.com/shinokada/svelte-heros/compare/v3.1.0...v3.3.0) (2023-05-12)
