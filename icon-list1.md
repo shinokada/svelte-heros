@@ -232,7 +232,7 @@
 - PresentationChartLine
 - Printer
 - PuzzlePiece
-- Qrcode
+- QrCode
 - QuestionMarkCircle
 - QueueList
 - Radio

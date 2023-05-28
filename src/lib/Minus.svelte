@@ -2,20 +2,7 @@
   export let size = "24";
   export let color="currentColor";
   export let variation: "solid" | "outline" = "outline";
-  let viewBox: string = '0 0 24 24';
-  let svgpath: string;
-  let svgoutline = `<path d="M19.5 12L4.5 12" stroke="${color}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> `;
-  let svgsolid = `<path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 12C3.75 11.5858 4.08579 11.25 4.5 11.25L19.5 11.25C19.9142 11.25 20.25 11.5858 20.25 12C20.25 12.4142 19.9142 12.75 19.5 12.75L4.5 12.75C4.08579 12.75 3.75 12.4142 3.75 12Z" fill="${color}"/> `;
-  $: switch (variation) {
-		case 'outline':
-			svgpath = svgoutline;
-			break;
-		case 'solid':
-			svgpath = svgsolid;
-			break;
-		default:
-			svgpath = svgoutline;
-	}
+  export let viewBox: string = '0 0 24 24';
 export let ariaLabel="minus" </script>
 
 <svg
@@ -36,5 +23,9 @@ export let ariaLabel="minus" </script>
   on:blur 
   on:focus 
 >
-  {@html svgpath}
+  {#if variation === 'outline'}
+    <path d="M19.5 12L4.5 12" stroke="{color}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> 
+  {:else}
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 12C3.75 11.5858 4.08579 11.25 4.5 11.25L19.5 11.25C19.9142 11.25 20.25 11.5858 20.25 12C20.25 12.4142 19.9142 12.75 19.5 12.75L4.5 12.75C4.08579 12.75 3.75 12.4142 3.75 12Z" fill="{color}"/> 
+  {/if}
 </svg>
