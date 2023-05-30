@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.7.0](https://github.com/shinokada/svelte-heros/compare/v3.5.0...v3.7.0) (2023-05-30)
+
+
+### Features
+
+* add IDE support for component document ([9983f54](https://github.com/shinokada/svelte-heros/commit/9983f541482b2c7f74f4f34af8b98ba84d6a7bce))
+
 ## [3.5.0](https://github.com/shinokada/svelte-heros/compare/v3.3.1...v3.5.0) (2023-05-28)
 
 
