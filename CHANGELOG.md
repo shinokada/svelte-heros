@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.9.0](https://github.com/shinokada/svelte-heros/compare/v3.8.0...v3.9.0) (2023-05-30)
+
+
+### Features
+
+* add ariaLabel ([1dbb1f3](https://github.com/shinokada/svelte-heros/commit/1dbb1f3b01499c65f1e8db441bebe77b99d3abc0))
+
 ## [3.8.0](https://github.com/shinokada/svelte-heros/compare/v3.7.0...v3.8.0) (2023-05-30)
 
 ### Features
