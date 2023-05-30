@@ -4,26 +4,23 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [3.7.0](https://github.com/shinokada/svelte-heros/compare/v3.5.0...v3.7.0) (2023-05-30)
 
-
 ### Features
 
-* add IDE support for component document ([9983f54](https://github.com/shinokada/svelte-heros/commit/9983f541482b2c7f74f4f34af8b98ba84d6a7bce))
+- add IDE support for component document ([9983f54](https://github.com/shinokada/svelte-heros/commit/9983f541482b2c7f74f4f34af8b98ba84d6a7bce))
 
 ## [3.5.0](https://github.com/shinokada/svelte-heros/compare/v3.3.1...v3.5.0) (2023-05-28)
 
-
 ### Features
 
-* without backticks for XSS ([077e634](https://github.com/shinokada/svelte-heros/commit/077e634912a4af872033571692ac5d9420f30c4f))
+- without backticks for XSS ([077e634](https://github.com/shinokada/svelte-heros/commit/077e634912a4af872033571692ac5d9420f30c4f))
 
 ### [3.3.1](https://github.com/shinokada/svelte-heros/compare/v3.3.0...v3.3.1) (2023-05-12)
 
 ## [3.3.0](https://github.com/shinokada/svelte-heros/compare/v3.1.0...v3.3.0) (2023-05-12)
 
-
 ### Features
 
-* add events and update README ([0460c73](https://github.com/shinokada/svelte-heros/commit/0460c7317df58925e72b41474b4a9383f700e83d))
+- add events and update README ([0460c73](https://github.com/shinokada/svelte-heros/commit/0460c7317df58925e72b41474b4a9383f700e83d))
 
 ## [3.1.0](https://github.com/shinokada/svelte-heros/compare/v2.9.2...v3.1.0) (2023-03-07)
 

@@ -1,9 +1,10 @@
 <script lang="ts">
-  export let size = "24";
-  export let color="currentColor";
-  export let variation: "solid" | "outline" = "outline";
+  export let size = '24';
+  export let color = 'currentColor';
+  export let variation: 'solid' | 'outline' = 'outline';
   export let viewBox: string = '0 0 24 24';
-export let ariaLabel="minus" </script>
+  export let ariaLabel = 'minus';
+</script>
 
 <svg
   xmlns="http://www.w3.org/2000/svg"
@@ -12,32 +13,49 @@ export let ariaLabel="minus" </script>
   class={$$props.class}
   {...$$restProps}
   aria-label={ariaLabel}
-  fill="none" 
- {viewBox}
-  stroke-width="2" 
-  on:click 
-  on:mouseenter 
-  on:mouseleave 
-  on:mouseover 
-  on:mouseout 
-  on:blur 
-  on:focus 
+  fill="none"
+  {viewBox}
+  stroke-width="2"
+  on:click
+  on:mouseenter
+  on:mouseleave
+  on:mouseover
+  on:mouseout
+  on:blur
+  on:focus
 >
   {#if variation === 'outline'}
-    <path d="M19.5 12L4.5 12" stroke="{color}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> 
+    <path
+      d="M19.5 12L4.5 12"
+      stroke={color}
+      stroke-width="1.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
   {:else}
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 12C3.75 11.5858 4.08579 11.25 4.5 11.25L19.5 11.25C19.9142 11.25 20.25 11.5858 20.25 12C20.25 12.4142 19.9142 12.75 19.5 12.75L4.5 12.75C4.08579 12.75 3.75 12.4142 3.75 12Z" fill="{color}"/> 
+    <path
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      d="M3.75 12C3.75 11.5858 4.08579 11.25 4.5 11.25L19.5 11.25C19.9142 11.25 20.25 11.5858 20.25 12C20.25 12.4142 19.9142 12.75 19.5 12.75L4.5 12.75C4.08579 12.75 3.75 12.4142 3.75 12Z"
+      fill={color}
+    />
   {/if}
 </svg>
-
 
 <!--
   @component
   [Go to Document](https://svelte-heros.codewithshin.com/)
-
   ## Props
   @prop size = "24";
   @prop color="currentColor";
   @prop variation: "solid" | "outline" = "outline";
   @prop viewBox: string = '0 0 24 24';
+  ## Event
+  - on:click 
+  - on:mouseenter 
+  - on:mouseleave 
+  - on:mouseover 
+  - on:mouseout 
+  - on:blur 
+  - on:focus 
 -->
