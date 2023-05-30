@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.10.0](https://github.com/shinokada/svelte-heros/compare/v3.9.0...v3.10.0) (2023-05-30)
+
+
+### Features
+
+* event update ([c44ba6b](https://github.com/shinokada/svelte-heros/commit/c44ba6b8549de982605fbc01c6ff513b3dc4c2ab))
+
 ## [3.9.0](https://github.com/shinokada/svelte-heros/compare/v3.8.0...v3.9.0) (2023-05-30)
 
 ### Features
