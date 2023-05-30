@@ -92,6 +92,10 @@ To avoid any complaints from the editor, add `node16` or `nodenext` to `moduleRe
 | ariaLabel                    | file name |
 | variation (solid or outline) | outline   |
 
+## IDE support
+
+If you are using an LSP-compatible editor, such as VSCode, Atom, Sublime Text, or Neovim, hovering over a component name will display a documentation link, features, props, events, and an example.
+
 ## Variation
 
 The default variation value is outline. Use the `variation` prop to change it to solid.
