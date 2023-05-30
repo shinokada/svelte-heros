@@ -4,10 +4,9 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [3.8.0](https://github.com/shinokada/svelte-heros/compare/v3.7.0...v3.8.0) (2023-05-30)
 
-
 ### Features
 
-* add events to component doc ([1d90134](https://github.com/shinokada/svelte-heros/commit/1d901342d338b018089a1f44fd614c3c649429bc))
+- add events to component doc ([1d90134](https://github.com/shinokada/svelte-heros/commit/1d901342d338b018089a1f44fd614c3c649429bc))
 
 ## [3.7.0](https://github.com/shinokada/svelte-heros/compare/v3.5.0...v3.7.0) (2023-05-30)
 
