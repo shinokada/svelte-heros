@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.11.0](https://github.com/shinokada/svelte-heros/compare/v3.10.0...v3.11.0) (2023-06-01)
+
+
+### Features
+
+* add || ^4.0.0 to peerDependencies ([4f62f1e](https://github.com/shinokada/svelte-heros/commit/4f62f1e2569a574c25e916ce821edb80a4861f24))
+
 ## [3.10.0](https://github.com/shinokada/svelte-heros/compare/v3.9.0...v3.10.0) (2023-05-30)
 
 
