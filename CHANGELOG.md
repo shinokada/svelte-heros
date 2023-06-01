@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.12.0](https://github.com/shinokada/svelte-heros/compare/v3.11.0...v3.12.0) (2023-06-01)
+
+
+### Features
+
+* add prop role="img" ([8f7f938](https://github.com/shinokada/svelte-heros/commit/8f7f938a5b218915e7fa8e40570857887745653d))
+
 ## [3.11.0](https://github.com/shinokada/svelte-heros/compare/v3.10.0...v3.11.0) (2023-06-01)
 
 ### Features
