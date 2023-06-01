@@ -1,5 +1,6 @@
 <script lang="ts">
   export let size = '24';
+  export let role = 'img';
   export let color = 'currentColor';
   export let variation: 'solid' | 'outline' = 'outline';
   export let viewBox: string = '0 0 24 24';
@@ -10,8 +11,8 @@
   xmlns="http://www.w3.org/2000/svg"
   width={size}
   height={size}
-  class={$$props.class}
   {...$$restProps}
+  {role}
   aria-label={ariaLabel}
   fill="none"
   {viewBox}
@@ -75,6 +76,7 @@
   [Go to Document](https://svelte-heros.codewithshin.com/)
   ## Props
   @prop size = "24";
+  @prop role = "img";
   @prop color="currentColor";
   @prop variation: "solid" | "outline" = "outline";
   @prop viewBox: string = '0 0 24 24';
