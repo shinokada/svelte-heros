@@ -24,7 +24,7 @@ Thank you for considering my open-source package. If you use it in a commercial 
 
 ## License
 
-[Svelte-HerosLicense](https://github.com/shinokada/svelte-heros/blob/main/LICENSE)
+[Svelte-Heros License](https://github.com/shinokada/svelte-heros/blob/main/LICENSE)
 
 [tailwindlabs/heroicons LICENSE](https://github.com/tailwindlabs/heroicons/blob/main/LICENSE)
 
