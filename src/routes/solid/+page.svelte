@@ -1,4 +1,6 @@
 <script>
+  import Label from 'flowbite-svelte/Label.svelte';
+  import Range from 'flowbite-svelte/Range.svelte';
   import Tabs from 'flowbite-svelte/Tabs.svelte';
   import TabItem from 'flowbite-svelte/TabItem.svelte';
   import TableSearch from 'flowbite-svelte/TableSearch.svelte';
@@ -22,6 +24,7 @@
   $: filteredEntries = Object.entries(Icons).filter(([name, component]) => {
     return name.toLowerCase().indexOf(searchTerm.toLowerCase()) !== -1;
   });
+  let size="24";
 </script>
 
 <TableSearch
