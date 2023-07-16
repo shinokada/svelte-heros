@@ -33,13 +33,17 @@
   bind:inputValue={searchTerm}
   divClass='relative overflow-x-auto'
 >
+<div class="xl:w-1/3 lg:w-2/5 md:w-1/2 sm:w-3/4 w-full p-4">
+  <Label class="text-lg py-4 ">Icon size: {size}</Label>
+  <Range id="range1" min="16" max="50" bind:value={size} />
+</div>
   <Tabs style="pill" {contentClass} class="p-4">
     <TabItem open>
       <span slot="title" class="text-lg">Mono</span>
       <div class="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 px-4 dark:text-white">
         {#each filteredEntries as [name, component]}
           <div class="flex gap-4 items-center text-lg">
-            <svelte:component this={component} variation="solid"/>
+            <svelte:component this={component} variation="solid" class="shrink-0" bind:size={size}/>
             {name}
           </div>
         {/each}
@@ -54,6 +58,7 @@
               this={component}
               color={random_hex_color_code()}
               variation="solid"
+              class="shrink-0" bind:size={size}
             />
             {name}
           </div>
@@ -65,7 +70,8 @@
       <div class="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 px-4 dark:text-white">
         {#each filteredEntries as [name, component]}
           <div class="flex gap-4 items-center text-lg">
-            <svelte:component this={component} class={random_tailwind_color()} variation="solid"/>
+            <svelte:component this={component} class={random_tailwind_color()} variation="solid"
+            bind:size={size}/>
             {name}
           </div>
         {/each}
