@@ -1,21 +1,17 @@
-import { beforeEach, afterEach, test, expect } from 'vitest';
-import '@testing-library/jest-dom/extend-expect';
-import { AcademicCap } from '../src/lib/index';
-import { render, screen, cleanup } from '@testing-library/svelte';
+import { expect, test } from '@playwright/test';
 
-afterEach(() => cleanup());
-beforeEach(() => {
-  render(AcademicCap, { size: '40' });
+test('index page has expected h1', async ({ page }) => {
+  await page.goto('/');
+  expect(await page.textContent('h1')).toBe('Svelte Heros');
 });
 
-test('should mount the path element', async () => {
-  const pathElement = screen.getByLabelText('svg-path');
-
-  expect(pathElement).toBeInTheDocument();
+test('Outline page has expected h1', async ({ page }) => {
+  await page.goto('/outline');
+  expect(await page.textContent('h1')).toBe('Svelte Heros: Outline');
 });
 
-test('should have the correct d attribute passed in from baseEdgeProps', async () => {
-  const pathElement = screen.getByLabelText('svg-path');
-
-  expect(pathElement).toHaveAttribute('size', '40');
+test('Solid page has expected h1', async ({ page }) => {
+  await page.goto('/solid');
+  expect(await page.textContent('h1')).toBe('Svelte Heros: Solid');
 });
+
