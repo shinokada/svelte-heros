@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.13.0](https://github.com/shinokada/svelte-heros/compare/v3.12.1...v3.13.0) (2023-07-20)
+
+
+### Features
+
+* add size range ([81ccf15](https://github.com/shinokada/svelte-heros/commit/81ccf153e2a5b3615ec66669cd13158e874c5a76))
+* layout update ([1a320ea](https://github.com/shinokada/svelte-heros/commit/1a320eaeff61bb6ae7728af61877097234e887a3))
+
+
+### Bug Fixes
+
+* add QrCode ([9eeb89e](https://github.com/shinokada/svelte-heros/commit/9eeb89eb90a698a5363eb55337eabff68835556c))
+* homepage update ([7a23086](https://github.com/shinokada/svelte-heros/commit/7a230860bb43bf454cd4976b46fae0340f33eaca))
+* remove Qrcode ([ddc9f96](https://github.com/shinokada/svelte-heros/commit/ddc9f96d0e180ff7711c91b2adbc9ea6c33fc708))
+* remove w-8 h-8 ([9e89651](https://github.com/shinokada/svelte-heros/commit/9e896516bd843492273ecd8a7218f0f0a77b6342))
+* remove w-8 h-8 ([1de9b90](https://github.com/shinokada/svelte-heros/commit/1de9b90d2667f160442c560212b744c4b702386d))
+* typo ([e5c0cb5](https://github.com/shinokada/svelte-heros/commit/e5c0cb5692054b08fdd17d8e9665f8787f0a62fc))
+* update flowbite-svelte v0.40.1, add @floating-ui/dom remove flowbite and popper, add tests ([89ea56f](https://github.com/shinokada/svelte-heros/commit/89ea56fd16d7836749fe2a36b5122e2bb9d988b6))
+
 ### [3.12.1](https://github.com/shinokada/svelte-heros/compare/v3.12.0...v3.12.1) (2023-06-15)
 
 ## [3.12.0](https://github.com/shinokada/svelte-heros/compare/v3.11.0...v3.12.0) (2023-06-01)
