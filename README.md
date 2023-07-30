@@ -1,11 +1,11 @@
-# Svelte-Heros
+# Svelte Heros
 
 <div class="flex gap-2 my-8">
-<a href="https://github.com/sponsors/shinokada" target="_blank"><img src="https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86" alt="sponsor" height="25"></a>
-<a href="https://www.npmjs.com/package/svelte-heros" rel="nofollow" target="_blank"><img src="https://img.shields.io/npm/v/svelte-heros" alt="npm" height="25"></a>
-<a href="https://twitter.com/shinokada" rel="nofollow" target="_blank"><img src="https://img.shields.io/badge/created%20by-@shinokada-4BBAAB.svg" alt="Created by Shin Okada" height="25"></a>
-<a href="http://www.apache.org/licenses/" rel="nofollow" target="_blank"><img src="https://img.shields.io/github/license/shinokada/svelte-heros" alt="License" height="25"></a>
-<a href="https://www.npmjs.com/package/svelte-heros" rel="nofollow" target="_blank"><img src="https://img.shields.io/npm/dw/svelte-heros.svg" alt="npm" height="25"></a>
+<a href="https://github.com/sponsors/shinokada" target="_blank"><img src="https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86" alt="sponsor" height="25" style="height: 25px !important;"></a>
+<a href="https://www.npmjs.com/package/svelte-heros" rel="nofollow" target="_blank"><img src="https://img.shields.io/npm/v/svelte-heros" alt="npm" height="25" style="height: 25px !important;"></a>
+<a href="https://twitter.com/shinokada" rel="nofollow" target="_blank"><img src="https://img.shields.io/badge/created%20by-@shinokada-4BBAAB.svg" alt="Created by Shin Okada" height="25" style="height: 25px !important;"></a>
+<a href="http://www.apache.org/licenses/" rel="nofollow" target="_blank"><img src="https://img.shields.io/github/license/shinokada/svelte-heros" alt="License" height="25" style="height: 25px !important;"></a>
+<a href="https://www.npmjs.com/package/svelte-heros" rel="nofollow" target="_blank"><img src="https://img.shields.io/npm/dw/svelte-heros.svg" alt="npm" height="25" style="height: 25px !important;"></a>
 </div>
 
 New version, [Svelte-Heros-v2](https://svelte-heros-v2.vercel.app) is out.
@@ -24,7 +24,7 @@ Thank you for considering my open-source package. If you use it in a commercial 
 
 ## License
 
-[Svelte-HerosLicense](https://github.com/shinokada/svelte-heros/blob/main/LICENSE)
+[Svelte-Heros License](https://github.com/shinokada/svelte-heros/blob/main/LICENSE)
 
 [tailwindlabs/heroicons LICENSE](https://github.com/tailwindlabs/heroicons/blob/main/LICENSE)
 
@@ -39,74 +39,38 @@ pnpm i svelte-heros@latest
 
 ```html
 <script>
-  import { AcademicCap } from 'svelte-heros';
-</script>
-```
-
-## Faster compiling
-
-If you need only a few icons from this library in your Svelte app, import them directly. This can optimize compilation speed and improve performance by reducing the amount of code processed during compilation.
-
-```html
-<script>
-  import AcademicCap from 'svelte-heros/AcademicCap.svelte';
+  import { Icon } from 'svelte-heros';
 </script>
 
-<AcademicCap />
-```
-
-If you are a TypeScript user, install **typescript version 5.0.0 or above**.
-
-```sh
-pnpm i -D typescript@beta
-```
-
-To avoid any complaints from the editor, add `node16` or `nodenext` to `moduleResolution` in your tsconfig.json file.
-
-```json
-{
-  //...
-  "compilerOptions": {
-    // ...
-    "moduleResolution": "nodenext"
-  }
-}
+<Icon name="academic-cap-outline" />
 ```
 
 ## Props
 
-| Name                         | Default   |
-| ---------------------------- | --------- |
-| size                         | 24        |
-| role                         | img       |
-| class                        |           |
-| ariaLabel                    | file name |
-| variation (solid | outline) | outline   |
+- @prop name;
+- @prop width = "24";
+- @prop height = "24";
+- @prop role = 'img';
+- @prop color = 'currentColor'
+- @prop ariaLabel='icon name'
+- @prop strokeWidth = "1.5";
 
 ## IDE support
 
 If you are using an LSP-compatible editor, such as VSCode, Atom, Sublime Text, or Neovim, hovering over a component name will display a documentation link, features, props, events, and an example.
 
-## Variation
-
-The default variation value is outline. Use the `variation` prop to change it to solid.
-
-```html
-<AcademicCap variation="solid" />
-```
-
 ## Size
 
-Use the `size` prop to change the size of icons.
+Use the `width` and `height` props to change the size of icons.
 
 ```html
-<AcademicCap size="30" />
+<Icon name="academic-cap-outline" width="100" height="100" />
 ```
 
 If you are using Tailwind CSS, you can add a custom size using Tailwind CSS by including the desired classes in the class prop. For example:
 
 ```html
-<AcademicCap class="shrink-0 h-20 w-20" />
+<Icon name="academic-cap-outline" class="shrink-0 h-20 w-20" />
 ```
 
 ## CSS HEX Colors
@@ -114,51 +78,42 @@ If you are using Tailwind CSS, you can add a custom size using Tailwind CSS by i
 Use the `color` prop to change colors with HEX color code.
 
 ```html
-<AcademicCap color="#ff0000" /> 
-<AcademicCap color="#00ffd8" />
+<Icon name="academic-cap-outline" color="#c61515" />
 ```
 
-## CSS framework support
+## CSS frameworks suport
 
-You can apply CSS framework color and other attributes directly to the icon component or its parent tag using the class prop.
+You can apply CSS framework color and other attributes directly to the icon component or its parent tag using the `class` prop.
 
-For example, Tailwind CSS:
+Tailwind CSS example:
 
 ```html
-<AcademicCap class="text-pink-700 mr-4" />
+<Icon name="academic-cap-outline" class="text-red-700 inline m-1" />
 ```
 
-If you use the dark mode on your website with Tailwind CSS, add your dark mode class to the `class` prop.
+Bootstrap examples:
+
+```html
+<Icon name="academic-cap-outline" class="position-absolute top-0 px-1" />
+```
+
+## Dark mode
+
+If you are using the dark mode on your website with Tailwind CSS, add your dark mode class to the `class` prop.
 
 Let's use `dark` for the dark mode class as an example.
 
 ```html
-<AcademicCap class="text-pink-700 dark:text-blue-300" />
-```
-
-Bootstrap example:
-
-```html
-<AcademicCap class="position-absolute top-0 px-1" />
-```
-
-# Dark mode
-
-If you are using the dark mode on your website with Tailwind CSS, add your dark mode class to the class prop.
-
-Let’s use dark for the dark mode class as an example.
-
-```html
-<AcademicCap class="text-blue-700 dark:text-red-500" />
+<Icon name="academic-cap-outline"  class="text-blue-700 dark:text-red-500" />
 ```
 
 ## aria-label
 
-All icons have aria-label. For example `AcademicCap` has `aria-label="academic cap"`.
+All icons have aria-label. For example `academic-cap-outline` has `aria-label="academic cap outline"`.
 Use `ariaLabel` prop to modify the `aria-label` value.
 
 ```html
-<AcademicCap ariaLabel="red academic cap" class="text-red-500" />
+<Icon name="academic-cap-outline" ariaLabel="red academic cap outline" color="#c61515"/>
 ```
 
 ## Unfocusable icon
@@ -166,7 +121,7 @@ Use `ariaLabel` prop to modify the `aria-label` value.
 If you want to make an icon unfocusable, add `tabindex="-1"`.
 
 ```html
-<AcademicCap tabindex="-1" />
+<Icon name="academic-cap-outline"  tabindex="-1" />
 ```
 
 ## Events
@@ -188,49 +143,50 @@ All icons have the following events:
 You can pass other attibutes as well.
 
 ```html
-<AcademicCap tabindex="0" />
+<Icon name="academic-cap-outline"  tabindex="0" />
 ```
 
 ## Using svelte:component
 
 ```html
-<script>
-  import { AcademicCap } from 'svelte-heros-v2';
-</script>
-
-<svelte:component this="{AcademicCap}" />
+<svelte:component this="{Icon}" name="academic-cap-outline" />
 ```
+
+## Using onMount
+
+```html
+<script>
+  import {Icon} from 'svelte-heros';
+  import { onMount } from 'svelte';
+  const props = {
+    name: 'academic-cap-outline',
+    size: '50',
+    color: '#ff0000'
+  };
+  onMount(() => {
+    const icon = new Icon({ target: document.body, props });
+  });
+</script>
+```
+
 
 ## Import all
 
-Use `import * as Icon from 'svelte-heros`.
+Use `import {Icon, icons} from 'svelte-heros';`.
 
 ```html
 <script>
-  import * as Icon from 'svelte-heros';
+  import {Icon, icons} from 'svelte-heros';
 </script>
 
-<Icon.ShoppingBag size="30" class="text-red-500" />
-<Icon.Sparkles size="40" class="text-blue-700" />
-<Icon.Star size="50" class="text-green-700" />
-<Icon.VolumeUp size="60" class="text-purple-500" />
-<Icon.VolumeUp size="100" class="text-purple-500" tabindex="0" />
-```
-
-[REPL](https://svelte.dev/repl/e532f0a6cf7f4d8cae9a9cc2088d234b)
-
-## Dynamically change the variation
-
-```html
-<script>
-  import { Map } from 'svelte-heros';
-  let isSolid = false;
-</script>
-
-<Map size="50" on:click={() => (isSolid = !isSolid)} variation={isSolid ? 'solid' : 'outline'} />
+{#each Object.keys(icons) as name}
+<div class="flex gap-4 items-center text-lg">
+  <Icon name={name} bind:width={size} bind:height={size} class="shrink-0"/>
+  {name}
+</div>
+{/each}
 ```
 
 ## Other icons
 
 [Svelte-Icon-Sets](https://svelte-svg-icons.vercel.app/)
-
