@@ -5,9 +5,14 @@ test('index page has expected h1', async ({ page }) => {
   expect(await page.textContent('h1')).toBe('Svelte Heros');
 });
 
-test('Icons page has expected h1', async ({ page }) => {
-  await page.goto('/icons');
-  expect(await page.textContent('h1')).toBe('Svelte Heros: Icons');
+test('Solid page has expected h1', async ({ page }) => {
+  await page.goto('/solid');
+  expect(await page.textContent('h1')).toBe('Svelte Heros: Solid icons');
+});
+
+test('Outline page has expected h1', async ({ page }) => {
+  await page.goto('/outline');
+  expect(await page.textContent('h1')).toBe('Svelte Heros: Outline icons');
 });
 
 

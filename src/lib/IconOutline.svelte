@@ -7,7 +7,7 @@
   export let color = 'currentColor';
   export let role = 'img';
   export let ariaLabel = name;
-  export let strokeWidth = "1.5";
+  export let strokeWidth = "2";
   
   $: displayIcon = icons[name]
 </script>
@@ -20,8 +20,6 @@ aria-label={ariaLabel}
 fill="none"
 stroke={color}
 stroke-width={strokeWidth}
-stroke-linecap="round"
-stroke-linejoin="round"
 {...$$restProps}
 class={$$props.class}
 on:click
@@ -40,7 +38,7 @@ viewBox="0 0 {displayIcon.box} {displayIcon.box}"
 
 <!--
 @component
-[Go to Document](https://shinokada.github.io/svelte-heros/)
+[Go to Document](https://svelte-heros.vercel.app/)
 ## Props
 @prop name;
 @prop width = "24";
@@ -48,7 +46,7 @@ viewBox="0 0 {displayIcon.box} {displayIcon.box}"
 @prop role = 'img';
 @prop color = 'currentColor'
 @prop ariaLabel='icon name'
-@prop strokeWidth = "1.5";
+@prop strokeWidth = "2";
 ## Event
 - on:click
 - on:keydown
