@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [4.2.0](https://github.com/shinokada/svelte-heros/compare/v4.1.1...v4.2.0) (2023-07-31)
+
+
+### Features
+
+* add IconSolid and IconOutline ([26bd457](https://github.com/shinokada/svelte-heros/commit/26bd457afb760feeb512b9338757bd269ba4352f))
+
 ### [4.1.1](https://github.com/shinokada/svelte-heros/compare/v4.1.0...v4.1.1) (2023-07-31)
 
 
