@@ -6,6 +6,9 @@
   import TableSearch from 'flowbite-svelte/TableSearch.svelte';
   import Icon from '$lib/IconSolid.svelte';
   import icons from '$lib/icons.js';
+  import { filterIconsByKeyword } from '../utils/filter.js'
+
+  const solidIcons = filterIconsByKeyword(icons, '-solid');
 
   const random_tailwind_color = () => {
     const colors = ['red', 'yellow', 'green', 'blue', 'indigo', 'purple', 'pink'];
@@ -21,7 +24,7 @@
   const contentClass = 'rounded-lg dark:bg-neutral-950 mt-4';
   let searchTerm = '';
 
-  $: filteredIconNames = Object.keys(icons).filter(name => {
+  $: filteredIconNames = Object.keys(solidIcons).filter(name => {
     return name.toLowerCase().indexOf(searchTerm.toLowerCase()) !== -1;
   });
   let size="20"
@@ -42,12 +45,10 @@
       <span slot="title" class="text-lg">Mono</span>
       <div class="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 px-4 dark:text-white">
         {#each filteredIconNames as iconName, i}
-        {#if iconName.includes('solid')}
         <div class="flex gap-4 items-center text-lg">
           <Icon name={iconName} bind:width={size} bind:height={size} class="shrink-0"/>
           {iconName}
         </div>
-        {/if}
         {/each}
       </div>
     </TabItem>
@@ -55,12 +56,10 @@
       <span slot="title" class="text-lg">Random Hex Colors</span>
       <div class="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 px-4 dark:text-white">
         {#each filteredIconNames as iconName, i}
-        {#if iconName.includes('solid')}
         <div class="flex gap-4 items-center text-lg">
           <Icon name={iconName} bind:width={size} bind:height={size} color={random_hex_color_code()} class="shrink-0"/>
           {iconName}
         </div>
-        {/if}
         {/each}
       </div>
     </TabItem>
@@ -68,12 +67,10 @@
       <span slot="title" class="text-lg">Random Tailwind CSS Colors</span>
       <div class="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 px-4 dark:text-white">
         {#each filteredIconNames as iconName, i}
-        {#if iconName.includes('solid')}
         <div class="flex gap-4 items-center text-lg">
           <Icon name={iconName} bind:width={size} bind:height={size} class={random_tailwind_color()} />
           {iconName}
         </div>
-        {/if}
         {/each}
       </div>
     </TabItem>
