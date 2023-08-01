@@ -178,15 +178,23 @@ Use `import { IconOutline, icons } from 'svelte-heros';`.
 ```html
 <script>
   import { IconOutline, icons } from 'svelte-heros';
+  function filterIconsByKeyword(icons, keyword) {
+    const filteredIcons = {};
+    for (const key in icons) {
+      if (key.includes(keyword)) {
+        filteredIcons[key] = icons[key];
+      }
+    }
+    return filteredIcons;
+  }
+  const outlineIcons = filterIconsByKeyword(icons, '-outline');
 </script>
 
-{#each Object.keys(icons) as name}
-{#if name.includes('outline')}
+{#each Object.keys(outlineIcons) as name}
 <div class="flex gap-4 items-center text-lg">
-  <IconOutline name={name} bind:width={size} bind:height={size} class="shrink-0"/>
+  <IconOutline name={name} class="shrink-0"/>
   {name}
 </div>
-{/if}
 {/each}
 ```
 

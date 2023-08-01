@@ -177,7 +177,7 @@ Use `import { IconOutline, icons } from 'svelte-heros';`.
 
 ```html
 <script>
-  import { IconOutline, icons } from 'svelte-heros-v2';
+  import { IconOutline, icons } from 'svelte-heros';
   function filterIconsByKeyword(icons, keyword) {
     const filteredIcons = {};
     for (const key in icons) {
