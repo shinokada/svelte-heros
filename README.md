@@ -54,7 +54,6 @@ pnpm i svelte-heros@latest
 - @prop role = 'img';
 - @prop color = 'currentColor'
 - @prop ariaLabel='icon name'
-- @prop strokeWidth = "1.5";
 
 ## IDE support
 
