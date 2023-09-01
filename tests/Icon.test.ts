@@ -14,5 +14,3 @@ test('Outline page has expected h1', async ({ page }) => {
   await page.goto('/outline');
   expect(await page.textContent('h1')).toBe('Svelte Heros: Outline icons');
 });
-
-
