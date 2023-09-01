@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [5.1.0](https://github.com/shinokada/svelte-heros/compare/v4.2.3...v5.1.0) (2023-09-01)
+
+
+### Features
+
+* smaller compiled size and Icon component ([9f91cf8](https://github.com/shinokada/svelte-heros/commit/9f91cf886b5d3efb8700fa642b7594181c00e8b6))
+
 ### [4.2.3](https://github.com/shinokada/svelte-heros/compare/v4.2.2...v4.2.3) (2023-08-03)
 
 ### [4.2.2](https://github.com/shinokada/svelte-heros/compare/v4.2.1...v4.2.2) (2023-08-02)
