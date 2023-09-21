@@ -1,9 +1,19 @@
 <script lang="ts">
-  export let size = '24';
-  export let role = 'img';
-  export let color = 'currentColor';
-  export let variation: 'solid' | 'outline' = 'outline';
-  export let viewBox: string = '0 0 24 24';
+  interface CtxType {
+    size?: string;
+    role?: string;
+    color?: string;
+    variation?: 'solid' | 'outline';
+    viewBox?: string;
+  }
+
+  import { getContext } from 'svelte';
+  const ctx: CtxType = getContext('iconCtx') ?? {};
+  export let size: string = ctx.size || '24';
+  export let role: string = ctx.role || 'img';
+  export let color: string = ctx.color || 'currentColor';
+  export let variation: 'solid' | 'outline' = ctx.variation || 'outline';
+  export let viewBox: string = ctx.viewBox || '0 0 24 24';
   export let ariaLabel = 'chat bubble bottom center';
 </script>
 
@@ -49,10 +59,10 @@
 @component
 [Go to docs](https://svelte-heros.vercel.app)
 ## Props
-@prop export let size = '24';
-@prop export let role = 'img';
-@prop export let color = 'currentColor';
-@prop export let variation: 'solid' | 'outline' = 'outline';
-@prop export let viewBox: string = '0 0 24 24';
+@prop export let size: string = ctx.size || '24';
+@prop export let role: string = ctx.role || 'img';
+@prop export let color: string = ctx.color || 'currentColor';
+@prop export let variation: 'solid' | 'outline' = ctx.variation || 'outline';
+@prop export let viewBox: string = ctx.viewBox || '0 0 24 24';
 @prop export let ariaLabel = 'chat bubble bottom center';
 -->
