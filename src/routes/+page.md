@@ -1,11 +1,15 @@
+---
+layout: mainLayout
+---
+
 # Svelte Heros
 
 <div class="flex gap-2 my-8">
-<a href="https://github.com/sponsors/shinokada" target="_blank"><img src="https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86" alt="sponsor" height="25" style="height: 25px !important;"></a>
-<a href="https://www.npmjs.com/package/svelte-heros" rel="nofollow" target="_blank"><img src="https://img.shields.io/npm/v/svelte-heros" alt="npm" height="25" style="height: 25px !important;"></a>
-<a href="https://twitter.com/shinokada" rel="nofollow" target="_blank"><img src="https://img.shields.io/badge/created%20by-@shinokada-4BBAAB.svg" alt="Created by Shin Okada" height="25" style="height: 25px !important;"></a>
-<a href="http://www.apache.org/licenses/" rel="nofollow" target="_blank"><img src="https://img.shields.io/github/license/shinokada/svelte-heros" alt="License" height="25" style="height: 25px !important;"></a>
-<a href="https://www.npmjs.com/package/svelte-heros" rel="nofollow" target="_blank"><img src="https://img.shields.io/npm/dw/svelte-heros.svg" alt="npm" height="25" style="height: 25px !important;"></a>
+<a href="https://github.com/sponsors/shinokada" target="_blank"><img src="https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86" alt="sponsor" ></a>
+<a href="https://www.npmjs.com/package/svelte-heros" rel="nofollow" target="_blank"><img src="https://img.shields.io/npm/v/svelte-heros" alt="npm" ></a>
+<a href="https://twitter.com/shinokada" rel="nofollow" target="_blank"><img src="https://img.shields.io/badge/created%20by-@shinokada-4BBAAB.svg" alt="Created by Shin Okada" ></a>
+<a href="http://www.apache.org/licenses/" rel="nofollow" target="_blank"><img src="https://img.shields.io/github/license/shinokada/svelte-heros" alt="License" ></a>
+<a href="https://www.npmjs.com/package/svelte-heros" rel="nofollow" target="_blank"><img src="https://img.shields.io/npm/dw/svelte-heros.svg" alt="npm" ></a>
 </div>
 
 New version, [Svelte-Heros-v2](https://svelte-heros-v2.vercel.app) is out.
@@ -189,8 +193,7 @@ Here, we import the `MyIcon` component and the `AcademicCap` icon. By passing th
 Use the `color` prop to change colors with HEX color code.
 
 ```html
-<AcademicCap color="#ff0000" /> 
-<AcademicCap color="#00ffd8" />
+<AcademicCap color="#ff0000" /> <AcademicCap color="#00ffd8" />
 ```
 
 ## CSS framework support
