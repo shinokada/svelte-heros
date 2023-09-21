@@ -93,7 +93,6 @@ If you are using Tailwind CSS, you can add a custom size using Tailwind CSS by i
 <AcademicCap class="shrink-0 h-20 w-20" />
 ```
 
-
 ## Setting Global Icon using setContext
 
 You can establish global icon preferences in your Svelte application using `setContext`. This allows you to configure icon-related properties once and share them across multiple components. Here's how you can do it:
