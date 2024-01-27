@@ -4,11 +4,10 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [5.2.0](https://github.com/shinokada/svelte-heros/compare/v5.1.0...v5.2.0) (2023-09-21)
 
-
 ### Features
 
-* add context ([02ecc8c](https://github.com/shinokada/svelte-heros/commit/02ecc8c44196cae7b7783d5ba97d3fcdd2d7fd9f))
-* add sidebar menu ([d88ca32](https://github.com/shinokada/svelte-heros/commit/d88ca32c3f2acedc8682164a20bff9acaba27f22))
+- add context ([02ecc8c](https://github.com/shinokada/svelte-heros/commit/02ecc8c44196cae7b7783d5ba97d3fcdd2d7fd9f))
+- add sidebar menu ([d88ca32](https://github.com/shinokada/svelte-heros/commit/d88ca32c3f2acedc8682164a20bff9acaba27f22))
 
 ## [5.1.0](https://github.com/shinokada/svelte-heros/compare/v4.2.3...v5.1.0) (2023-09-01)
 
