@@ -12,7 +12,7 @@ layout: mainLayout
 <a href="https://www.npmjs.com/package/svelte-heros" rel="nofollow" target="_blank"><img src="https://img.shields.io/npm/dw/svelte-heros.svg" alt="npm" ></a>
 </div>
 
-New version, [Svelte-Heros-v2](https://svelte-heros-v2.vercel.app) is out.
+New version, [Svelte-Heros-v2](https://svelte-heros-v2.codewithshin.com) is out.
 
 Hero Icons v1 for Svelte. You can select outline and solid icons using the variation props. Svlete-Heros support major CSS framework. You can add additional CSS using the `class` props.
 
@@ -21,16 +21,6 @@ Thank you for considering my open-source package. If you use it in a commercial 
 ## Repo
 
 [GitHub Repo](https://github.com/shinokada/svelte-heros)
-
-## Original source
-
-[tailwindlabs/heroicons](https://github.com/tailwindlabs/heroicons)
-
-## License
-
-[Svelte-Heros License](https://github.com/shinokada/svelte-heros/blob/main/LICENSE)
-
-[tailwindlabs/heroicons LICENSE](https://github.com/tailwindlabs/heroicons/blob/main/LICENSE)
 
 ## Installation
 
@@ -348,6 +338,16 @@ Use `import * as Icon from 'svelte-heros`.
 >
 ```
 
+## Original source
+
+[tailwindlabs/heroicons](https://github.com/tailwindlabs/heroicons)
+
+## License
+
+[Svelte-Heros License](https://github.com/shinokada/svelte-heros/blob/main/LICENSE)
+
+[tailwindlabs/heroicons LICENSE](https://github.com/tailwindlabs/heroicons/blob/main/LICENSE)
+
 ## Other icons
 
-[Svelte-Icon-Sets](https://svelte-svg-icons.vercel.app/)
+[Svelte-Icon-Sets](https://svelte-svg-icons.codewithshin.com/)
