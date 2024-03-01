@@ -22,7 +22,7 @@
 
 <!--
 @component
-[Go to docs](https://svelte-heros.vercel.app)
+[Go to docs](https://svelte-heros.codewithshin.com)
 ## Props
 @prop export let icon: ComponentType;
 @prop export let size: number = 24;
