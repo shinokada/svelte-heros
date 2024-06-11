@@ -1,7 +1,7 @@
 {
   "name": "svelte-heros",
   "version": "2.0.0-next.0",
-  "description": "TailwindLabs Heroicons v1 for Svelte",
+  "description": "TailwindLabs Heroicons for Svelte 4, 5, and Runes",
   "license": "MIT",
   "homepage": "https://svelte-heros.codewithshin.com/",
   "author": {
