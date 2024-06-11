@@ -31,7 +31,7 @@
   import { Runatics } from 'runatics';
 
   let { children, data } = $props()
-  const analyticsId = data.ANALYTICS_ID
+  const analyticsId = data.ANALYTICS_ID_ICONS
   let metaTags = $state(
     $page.data.pageMetaTags
       ? deepMerge($page.data.layoutMetaTags, $page.data.pageMetaTags)
