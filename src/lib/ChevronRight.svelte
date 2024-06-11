@@ -1,68 +1,87 @@
 <script lang="ts">
-  interface CtxType {
-    size?: string;
-    role?: string;
-    color?: string;
-    variation?: 'solid' | 'outline';
-    viewBox?: string;
-  }
-
   import { getContext } from 'svelte';
+  import type { CtxType, Props } from './types'
+
   const ctx: CtxType = getContext('iconCtx') ?? {};
-  export let size: string = ctx.size || '24';
-  export let role: string = ctx.role || 'img';
-  export let color: string = ctx.color || 'currentColor';
-  export let variation: 'solid' | 'outline' = ctx.variation || 'outline';
-  export let viewBox: string = ctx.viewBox || '0 0 24 24';
-  export let ariaLabel = 'chevron right';
+
+  let { 
+    size = ctx.size || '24', 
+    role = ctx.role || 'img', 
+    color = ctx.color || 'currentColor', 
+    variation = ctx.variation || "outline",
+    strokeWidth = ctx.strokeWidth || '1.5',
+    withEvents = ctx.withEvents || false, 
+    title, 
+    desc, 
+    class: classname, 
+    ariaLabel = "chevron right", 
+    onclick, 
+    onkeydown, 
+    onkeyup,
+    ...restProps 
+  }: Props = $props();
+
+  let ariaDescribedby = `${title?.id || ''} ${desc?.id || ''}`;
+  const hasDescription = $derived(!!(title?.id || desc?.id));
+  let viewBox: string = $state(''); 
+  
 </script>
 
-<svg
-  xmlns="http://www.w3.org/2000/svg"
-  width={size}
-  height={size}
-  {...$$restProps}
-  {role}
-  aria-label={ariaLabel}
-  fill="none"
-  {viewBox}
-  stroke-width="2"
-  on:click
-  on:keydown
-  on:keyup
-  on:focus
-  on:blur
-  on:mouseenter
-  on:mouseleave
-  on:mouseover
-  on:mouseout
->
+{#snippet path()}
   {#if variation === 'outline'}
-    <path
-      d="M8.25 4.5L15.75 12L8.25 19.5"
-      stroke={color}
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-    />
+    <path d="M9 5L16 12L9 19" stroke="{color}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> 
   {:else}
-    <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
-      d="M16.2803 11.4697C16.5732 11.7626 16.5732 12.2374 16.2803 12.5303L8.78033 20.0303C8.48744 20.3232 8.01256 20.3232 7.71967 20.0303C7.42678 19.7374 7.42678 19.2626 7.71967 18.9697L14.6893 12L7.71967 5.03033C7.42678 4.73744 7.42678 4.26256 7.71967 3.96967C8.01256 3.67678 8.48744 3.67678 8.78033 3.96967L16.2803 11.4697Z"
-      fill={color}
-    />
+     <path fill-rule="evenodd" clip-rule="evenodd" d="M7.29289 14.7071C6.90237 14.3166 6.90237 13.6834 7.29289 13.2929L10.5858 10L7.29289 6.70711C6.90237 6.31658 6.90237 5.68342 7.29289 5.29289C7.68342 4.90237 8.31658 4.90237 8.70711 5.29289L12.7071 9.29289C13.0976 9.68342 13.0976 10.3166 12.7071 10.7071L8.70711 14.7071C8.31658 15.0976 7.68342 15.0976 7.29289 14.7071Z" fill="{color}"/> 
   {/if}
-</svg>
+{/snippet}
 
-<!--
-@component
-[Go to docs](https://svelte-heros.codewithshin.com)
-## Props
-@prop export let size: string = ctx.size || '24';
-@prop export let role: string = ctx.role || 'img';
-@prop export let color: string = ctx.color || 'currentColor';
-@prop export let variation: 'solid' | 'outline' = ctx.variation || 'outline';
-@prop export let viewBox: string = ctx.viewBox || '0 0 24 24';
-@prop export let ariaLabel = 'chevron right';
--->
+{#if withEvents}
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    {...restProps}
+    {role}
+    width={size}
+    height={size}
+    class={classname}
+    fill="none"
+    aria-label={ariaLabel}
+    aria-describedby={hasDescription ? ariaDescribedby : undefined}
+    viewBox = '0 0 24 24'
+    stroke-width={strokeWidth}
+    onclick={onclick}
+    onkeydown={onkeydown}
+    onkeyup={onkeyup}
+  >
+    {#if title?.id && title.title}
+      <title id="{title.id}">{title.title}</title>
+    {/if}
+    {#if desc?.id && desc.desc}
+      <desc id="{desc.id}">{desc.desc}</desc>
+    {/if}
+      {@render path()}
+  </svg>
+{:else}
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    {...restProps}
+    {role}
+    width={size}
+    height={size}
+    class={classname}
+    fill="none"
+    aria-label={ariaLabel}
+    aria-describedby={hasDescription ? ariaDescribedby : undefined}
+    viewBox = '0 0 24 24'
+    stroke-width={strokeWidth}
+  >
+    {#if title?.id && title.title}
+      <title id="{title.id}">{title.title}</title>
+    {/if}
+    {#if desc?.id && desc.desc}
+      <desc id="{desc.id}">{desc.desc}</desc>
+    {/if}
+      {@render path()}
+  </svg>
+{/if}
+
+

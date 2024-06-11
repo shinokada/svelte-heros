@@ -1,68 +1,87 @@
 <script lang="ts">
-  interface CtxType {
-    size?: string;
-    role?: string;
-    color?: string;
-    variation?: 'solid' | 'outline';
-    viewBox?: string;
-  }
-
   import { getContext } from 'svelte';
+  import type { CtxType, Props } from './types'
+
   const ctx: CtxType = getContext('iconCtx') ?? {};
-  export let size: string = ctx.size || '24';
-  export let role: string = ctx.role || 'img';
-  export let color: string = ctx.color || 'currentColor';
-  export let variation: 'solid' | 'outline' = ctx.variation || 'outline';
-  export let viewBox: string = ctx.viewBox || '0 0 24 24';
-  export let ariaLabel = 'variable';
+
+  let { 
+    size = ctx.size || '24', 
+    role = ctx.role || 'img', 
+    color = ctx.color || 'currentColor', 
+    variation = ctx.variation || "outline",
+    strokeWidth = ctx.strokeWidth || '1.5',
+    withEvents = ctx.withEvents || false, 
+    title, 
+    desc, 
+    class: classname, 
+    ariaLabel = "variable", 
+    onclick, 
+    onkeydown, 
+    onkeyup,
+    ...restProps 
+  }: Props = $props();
+
+  let ariaDescribedby = `${title?.id || ''} ${desc?.id || ''}`;
+  const hasDescription = $derived(!!(title?.id || desc?.id));
+  let viewBox: string = $state(''); 
+  
 </script>
 
-<svg
-  xmlns="http://www.w3.org/2000/svg"
-  width={size}
-  height={size}
-  {...$$restProps}
-  {role}
-  aria-label={ariaLabel}
-  fill="none"
-  {viewBox}
-  stroke-width="2"
-  on:click
-  on:keydown
-  on:keyup
-  on:focus
-  on:blur
-  on:mouseenter
-  on:mouseleave
-  on:mouseover
-  on:mouseout
->
+{#snippet path()}
   {#if variation === 'outline'}
-    <path
-      d="M4.74455 3C3.61952 5.77929 3 8.8173 3 12C3 15.1827 3.61952 18.2207 4.74455 21M19.5 3C20.4673 5.77929 21 8.8173 21 12C21 15.1827 20.4673 18.2207 19.5 21M8.25 8.88462L9.6945 7.99569C10.1061 7.74241 10.6463 7.93879 10.7991 8.39726L13.2009 15.6027C13.3537 16.0612 13.8939 16.2576 14.3055 16.0043L15.75 15.1154M7.5 15.8654L7.71335 15.9556C8.45981 16.2715 9.32536 16.012 9.77495 15.3376L14.225 8.66243C14.6746 7.98804 15.5402 7.72854 16.2867 8.04435L16.5 8.13462"
-      stroke={color}
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-    />
+    <path d="M4.87104 4C3.67341 6.40992 3 9.12632 3 12C3 14.8737 3.67341 17.5901 4.87104 20M19.0001 20C20.1977 17.5901 20.8711 14.8737 20.8711 12C20.8711 9.12632 20.1977 6.40992 19.0001 4M9 9H10.2457C10.6922 9 11.0846 9.29598 11.2072 9.72528L12.7928 15.2747C12.9154 15.704 13.3078 16 13.7543 16H15M16 9H15.9199C15.336 9 14.7813 9.25513 14.4014 9.69842L9.59864 15.3016C9.21868 15.7449 8.66398 16 8.08013 16H8" stroke="{color}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> 
   {:else}
-    <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
-      d="M19.2535 2.29164C19.6447 2.15548 20.0722 2.36223 20.2083 2.75343C21.2033 5.61217 21.75 8.73352 21.75 12C21.75 15.2664 21.2033 18.3877 20.2083 21.2465C20.0722 21.6377 19.6447 21.8444 19.2535 21.7083C18.8623 21.5721 18.6555 21.1446 18.7917 20.7534C19.7313 18.0536 20.25 15.0989 20.25 12C20.25 8.901 19.7313 5.94634 18.7917 3.24649C18.6555 2.85529 18.8623 2.42779 19.2535 2.29164ZM5.02596 2.30476C5.40991 2.46018 5.59517 2.89742 5.43975 3.28137C4.3503 5.97278 3.75 8.91534 3.75 12C3.75 15.0846 4.3503 18.0271 5.43975 20.7185C5.59517 21.1025 5.40991 21.5397 5.02596 21.6952C4.64201 21.8506 4.20477 21.6653 4.04935 21.2814C2.88874 18.4142 2.25 15.2807 2.25 12C2.25 8.71918 2.88874 5.58573 4.04935 2.71855C4.20477 2.3346 4.64201 2.14934 5.02596 2.30476ZM9.30143 7.35691C10.1246 6.85034 11.205 7.24311 11.5106 8.16005L12.2266 10.308L13.601 8.24636C14.2504 7.27224 15.5007 6.89742 16.5789 7.35359L16.7922 7.44385C17.1737 7.60524 17.3521 8.04533 17.1907 8.4268C17.0293 8.80828 16.5892 8.98669 16.2078 8.8253L15.9944 8.73504C15.5797 8.55959 15.0989 8.70375 14.8491 9.07841L12.8275 12.1108L13.9124 15.3655L15.3569 14.4766C15.7097 14.2595 16.1717 14.3695 16.3887 14.7223C16.6058 15.075 16.4958 15.537 16.1431 15.7541L14.6986 16.643C13.8754 17.1496 12.795 16.7568 12.4894 15.8399L11.7734 13.6919L10.399 15.7536C9.74958 16.7277 8.49934 17.1025 7.42112 16.6463L7.20777 16.5561C6.82629 16.3947 6.64788 15.9546 6.80927 15.5731C6.97067 15.1916 7.41075 15.0132 7.79223 15.1746L8.00558 15.2649C8.42028 15.4403 8.90114 15.2962 9.15091 14.9215L11.1725 11.8891L10.0876 8.63439L8.64307 9.52332C8.2903 9.74041 7.82834 9.63042 7.61126 9.27765C7.39417 8.92488 7.50416 8.46292 7.85693 8.24583L9.30143 7.35691Z"
-      fill={color}
-    />
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.6485 3.08366C5.15459 3.30478 5.3856 3.89429 5.16448 4.40038C4.41582 6.11389 4 8.00707 4 10C4 11.9929 4.41582 13.8861 5.16448 15.5996C5.3856 16.1057 5.15459 16.6952 4.6485 16.9164C4.14242 17.1375 3.5529 16.9065 3.33178 16.4004C2.47486 14.4391 2 12.2737 2 10C2 7.72632 2.47486 5.56091 3.33178 3.59964C3.5529 3.09355 4.14242 2.86254 4.6485 3.08366ZM12.9613 7C12.0499 7 11.188 7.41427 10.6186 8.12592L10.2911 8.53528L10.1799 8.25722C9.87619 7.4979 9.14078 7 8.32297 7H8C7.44772 7 7 7.44772 7 8C7 8.55228 7.44772 9 8 9H8.32297L8.8551 10.3303L7.81962 11.6247C7.62985 11.8619 7.34253 12 7.03875 12H7C6.44772 12 6 12.4477 6 13C6 13.5523 6.44772 14 7 14H7.03875C7.9501 14 8.81204 13.5857 9.38136 12.8741L9.70885 12.4647L9.82008 12.7428C10.1238 13.5021 10.8592 14 11.677 14H12C12.5523 14 13 13.5523 13 13C13 12.4477 12.5523 12 12 12H11.677L11.1449 10.6697L12.1804 9.37531C12.3702 9.13809 12.6575 9 12.9613 9H13C13.5523 9 14 8.55228 14 8C14 7.44772 13.5523 7 13 7H12.9613ZM14.8355 4.40038C14.6144 3.89429 14.8454 3.30478 15.3515 3.08366C15.8576 2.86254 16.4471 3.09355 16.6682 3.59964C17.5251 5.56091 18 7.72632 18 10C18 12.2737 17.5251 14.4391 16.6682 16.4004C16.4471 16.9065 15.8576 17.1375 15.3515 16.9164C14.8454 16.6952 14.6144 16.1057 14.8355 15.5996C15.5842 13.8861 16 11.9929 16 10C16 8.00707 15.5842 6.11389 14.8355 4.40038Z" fill="{color}"/> 
   {/if}
-</svg>
+{/snippet}
 
-<!--
-@component
-[Go to docs](https://svelte-heros.codewithshin.com)
-## Props
-@prop export let size: string = ctx.size || '24';
-@prop export let role: string = ctx.role || 'img';
-@prop export let color: string = ctx.color || 'currentColor';
-@prop export let variation: 'solid' | 'outline' = ctx.variation || 'outline';
-@prop export let viewBox: string = ctx.viewBox || '0 0 24 24';
-@prop export let ariaLabel = 'variable';
--->
+{#if withEvents}
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    {...restProps}
+    {role}
+    width={size}
+    height={size}
+    class={classname}
+    fill="none"
+    aria-label={ariaLabel}
+    aria-describedby={hasDescription ? ariaDescribedby : undefined}
+    viewBox = '0 0 24 24'
+    stroke-width={strokeWidth}
+    onclick={onclick}
+    onkeydown={onkeydown}
+    onkeyup={onkeyup}
+  >
+    {#if title?.id && title.title}
+      <title id="{title.id}">{title.title}</title>
+    {/if}
+    {#if desc?.id && desc.desc}
+      <desc id="{desc.id}">{desc.desc}</desc>
+    {/if}
+      {@render path()}
+  </svg>
+{:else}
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    {...restProps}
+    {role}
+    width={size}
+    height={size}
+    class={classname}
+    fill="none"
+    aria-label={ariaLabel}
+    aria-describedby={hasDescription ? ariaDescribedby : undefined}
+    viewBox = '0 0 24 24'
+    stroke-width={strokeWidth}
+  >
+    {#if title?.id && title.title}
+      <title id="{title.id}">{title.title}</title>
+    {/if}
+    {#if desc?.id && desc.desc}
+      <desc id="{desc.id}">{desc.desc}</desc>
+    {/if}
+      {@render path()}
+  </svg>
+{/if}
+
+

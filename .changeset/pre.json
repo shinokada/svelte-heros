@@ -1,0 +1,8 @@
+{
+  "mode": "pre",
+  "tag": "next",
+  "initialVersions": {
+    "svelte-heros": "7.0.0-next.0"
+  },
+  "changesets": []
+}
