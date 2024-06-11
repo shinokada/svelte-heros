@@ -3,6 +3,7 @@ import { expect, test } from '@playwright/test';
 const title = 'Svelte Heros'
 const description = 'TailwindLabs Heroicons for Svelte 4, 5, and Runes'
 const keywords = 'svelte, sveltekit, tailwindcss, icons, heroicons'
+const imgUrl = 'https://open-graph-vercel.vercel.app/api/svelte-heros'
 
 test.beforeEach(async ({ page }) => {
   console.log(`Running ${test.info().title}`);
@@ -36,7 +37,7 @@ test('index page has expected meta og', async ({ page, baseURL }) => {
   const url = baseURL + '/';
   await expect(metaOgUrl).toHaveAttribute('content', url);
   const metaOgImage = page.locator('meta[property="og:image"]');
-  await expect(metaOgImage).toHaveAttribute('content', 'https://open-graph-vercel.vercel.app/api/svelte-heros');
+  await expect(metaOgImage).toHaveAttribute('content', imgUrl);
 });
 
 test('index page has expected meta twitter', async ({ page }) => {
@@ -45,8 +46,5 @@ test('index page has expected meta twitter', async ({ page }) => {
   const metaTwitterDescription = page.locator('meta[name="twitter:description"]');
   await expect(metaTwitterDescription).toHaveAttribute('content', description);
   const metaTwitterImage = page.locator('meta[name="twitter:image"]');
-  await expect(metaTwitterImage).toHaveAttribute(
-    'content',
-    'https://open-graph-vercel.vercel.app/api/svelte-heros'
-  );
+  await expect(metaTwitterImage).toHaveAttribute('content', imgUrl);
 });
