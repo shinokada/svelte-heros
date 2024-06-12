@@ -5,6 +5,7 @@
     "svelte-heros": "7.0.0-next.0"
   },
   "changesets": [
-    "nine-apes-judge"
+    "nine-apes-judge",
+    "spicy-apes-vanish"
   ]
 }
