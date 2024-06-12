@@ -18,3 +18,14 @@
   class={classname} 
   aria-label={ariaLabel}
 />
+
+<!--
+@component
+[Go to docs](https://svelte-heros.codewithshin.com/)
+## Props
+@props: icon: ComponentType;
+@props:size?: string;
+@props:role?: string;
+@props:ariaLabel?: string;
+@props:class?: string;
+-->
