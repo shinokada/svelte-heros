@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 7.0.0-next.3
+
+### Patch Changes
+
+- feat: extends SVGAttributes<SVGElement> ([`eb8cd3b85e99182322518590ad6fd535d5a9d87f`](https://github.com/shinokada/svelte-heros/commit/eb8cd3b85e99182322518590ad6fd535d5a9d87f))
+
 ## 7.0.0-next.2
 
 ### Patch Changes

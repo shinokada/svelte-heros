@@ -17,5 +17,9 @@
 @component
 [Go to docs](https://svelte-heros.codewithshin.com/)
 ## Props
-@props: 
+@prop icon
+@prop size = '24'
+@prop role = 'img'
+@prop ariaLabel = 'Icon'
+@prop ...restProps
 -->

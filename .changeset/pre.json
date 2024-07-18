@@ -4,5 +4,9 @@
   "initialVersions": {
     "svelte-heros": "7.0.0-next.0"
   },
-  "changesets": ["nine-apes-judge", "spicy-apes-vanish"]
+  "changesets": [
+    "nine-apes-judge",
+    "ninety-cheetahs-beg",
+    "spicy-apes-vanish"
+  ]
 }
