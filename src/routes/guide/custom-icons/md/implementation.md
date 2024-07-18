@@ -1,6 +1,6 @@
 <script>
   import MyIcon from '$lib/MyIcon.svelte';
-  import { Accessibility } from 'svelte-heros';
+  import { AcademicCap } from 'svelte-heros';
 </script>
 
-<MyIcon icon="{Accessibility}" />
+<MyIcon icon="{AcademicCap}" />

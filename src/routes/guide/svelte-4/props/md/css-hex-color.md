@@ -1,2 +1,2 @@
-<AdminLineUserFaces color="#ff0000" />
-<AdminLineUserFaces color="yellow" />
+<AcademicCap color="#ff0000" />
+<AcademicCap color="yellow" />

@@ -1,1 +1,1 @@
-<AdminLineUserFaces on:click="{handleClick}" />
+<AcademicCap on:click="{handleClick}" />

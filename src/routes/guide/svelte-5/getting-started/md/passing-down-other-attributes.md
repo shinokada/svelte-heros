@@ -1,1 +1,1 @@
-<Accessibility id="my-svg" transform="rotate(45)" />
+<AcademicCap id="my-svg" transform="rotate(45)" />

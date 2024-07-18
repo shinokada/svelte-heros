@@ -1,33 +1,44 @@
 <script lang="ts">
   import { HighlightCompo, CodeWrapper, Code, H2, H3 } from 'runes-webkit';
-  import { License, StaticBadge, NpmVersion, NpmDownloads } from 'svelte-shields'
-  import type { StaticBadgePropsType, NpmVersionPropsType, LicensePropsType, NpmDownloadsPropsType } from 'svelte-shields';
+  import { License, StaticBadge, NpmVersion, NpmDownload } from 'svelte-shields';
+  import type {
+    StaticBadgePropsType,
+    NpmVersionPropsType,
+    LicensePropsType,
+    NpmDownloadPropsType
+  } from 'svelte-shields';
   const sponsor: StaticBadgePropsType = {
     badgeContent: 'Sponsor-❤-blue',
     logo: 'GitHub',
-    color:'fe8e86',
+    color: 'fe8e86',
     link: ['https://github.com/sponsors/shinokada', 'https://github.com/sponsors/shinokada']
-  }
+  };
 
-  const npmVersion: NpmVersionPropsType ={
+  const npmVersion: NpmVersionPropsType = {
     packageName: 'svelte-heros',
     tag: 'next',
     logo: 'npm',
-    link: ['https://www.npmjs.com/package/svelte-heros', 'https://github.com/shinokada/svelte-heros']
-  }
+    link: [
+      'https://www.npmjs.com/package/svelte-heros',
+      'https://github.com/shinokada/svelte-heros'
+    ]
+  };
 
   const license: LicensePropsType = {
-    licenseType: 'github',
-    user: 'shinokada',
-    repo: 'svelte-heros',
-    link: ['https://github.com/shinokada/svelte-heros/blob/master/LICENSE', 'https://github.com/shinokada/svelte-heros/blob/master/LICENSE']
-  }
+    source: 'github',
+    github_user: 'shinokada',
+    github_repo: 'svelte-heros',
+    link: [
+      'https://github.com/shinokada/svelte-heros/blob/master/LICENSE',
+      'https://github.com/shinokada/svelte-heros/blob/master/LICENSE'
+    ]
+  };
 
-  const downloads: NpmDownloadsPropsType = {
+  const downloads: NpmDownloadPropsType = {
     packageName: 'svelte-heros',
     logo: 'npm',
-    link:['https://www.npmjs.com/package/svelte-heros']
-  }
+    link: ['https://www.npmjs.com/package/svelte-heros']
+  };
   const modules = import.meta.glob('./md/*.md', {
     query: '?raw',
     import: 'default',
@@ -39,9 +50,9 @@
 
 <div class="my-8 flex gap-2">
   <StaticBadge {...sponsor} />
-  <NpmVersion {...npmVersion}/>
+  <NpmVersion {...npmVersion} />
   <License {...license} />
-  <NpmDownloads {...downloads}/>
+  <NpmDownload {...downloads} />
 </div>
 
 <H2>Requirements</H2>
@@ -53,7 +64,7 @@
 
 <HighlightCompo codeLang="ts" code={modules['./md/installation.md'] as string} />
 
-<p>Install <Code>svelte-awesome-icons v2</Code>:</p>
+<p>Install <Code>svelte-heors v2</Code>:</p>
 
 <HighlightCompo codeLang="ts" code={modules['./md/installation-2.md'] as string} />
 

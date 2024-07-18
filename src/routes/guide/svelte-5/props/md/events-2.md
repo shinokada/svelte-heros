@@ -1,1 +1,1 @@
-<Accessibility withEvents onclick="{handleClick}" />
+<AcademicCap withEvents onclick="{handleClick}" />

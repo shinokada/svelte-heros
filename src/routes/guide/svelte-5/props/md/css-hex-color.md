@@ -1,2 +1,2 @@
-<Accessibility color="#ff0000" />
-<Accessibility color="green" />
+<AcademicCap color="#ff0000" />
+<AcademicCap color="green" />

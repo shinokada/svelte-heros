@@ -31,7 +31,7 @@
 <HighlightCompo codeLang="ts" code={modules['./md/implementation.md'] as string} />
 
 <p>
-  Here, we import the <Code>MyIcon</Code> component and the <Code>Accessibility</Code> icon. By passing
-  the <Code>Accessibility</Code> icon to the <Code>icon</Code> prop of MyIcon, you apply the default
-  configuration to the icon.
+  Here, we import the <Code>MyIcon</Code> component and the <Code>AcademicCap</Code> icon. By passing
+  the <Code>AcademicCap</Code> icon to the <Code>icon</Code> prop of MyIcon, you apply the default configuration
+  to the icon.
 </p>

@@ -2,5 +2,5 @@
   import * as Icon from 'svelte-heros';
 </script>
 
-<Icon.AdminLineUserFaces />
-<Icon.AdminLineUserFaces size="30" />
+<Icon.AcademicCap />
+<Icon.AcademicCap size="30" />

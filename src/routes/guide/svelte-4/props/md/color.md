@@ -1,1 +1,1 @@
-<AdminLineUserFaces size="40" color="#ff5511" />
+<AcademicCap size="40" color="#ff5511" />

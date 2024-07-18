@@ -1,5 +1,5 @@
 <script>
-  import { Accessibility } from 'svelte-heros';
+  import { AcademicCap } from 'svelte-heros';
 </script>
 
-<svelte:component this="{Accessibility}" />
+<svelte:component this="{AcademicCap}" />

@@ -26,7 +26,7 @@
 <HighlightCompo codeLang="ts" code={modules['./md/setting-preferences.md'] as string} />
 
 <p>
-  All properties are optional, allowing you to fine-tune the appearance and accessibility of your
+  All properties are optional, allowing you to fine-tune the appearance and AcademicCap of your
   icons as needed.
 </p>
 
@@ -40,5 +40,5 @@
 
 <p>
   Remember that you can set one or more properties, allowing you to tailor icon settings to your
-  specific design and accessibility requirements.
+  specific design and AcademicCap requirements.
 </p>

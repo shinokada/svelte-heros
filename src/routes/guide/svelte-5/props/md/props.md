@@ -1,12 +1,9 @@
-- size = ctx.size || '24' 
+- size = ctx.size || '24'
 - role = ctx.role || 'img'
-- color = ctx.color || 'currentColor' 
-- withEvents = ctx.withEvents || false
+- color = ctx.color || 'currentColor'
+- variation = ctx.variation || "outline
+- strokeWidth = ctx.strokeWidth || '1.5
 - title
 - desc
-- class: classname
-- ariaLabel =  "accessibility"
-- onclick
-- onkeydown
-- onkeyup
-- ...restProps 
+- ariaLabel = "arrow circle down"
+- ...restProps

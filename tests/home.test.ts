@@ -1,9 +1,9 @@
 import { expect, test } from '@playwright/test';
 
-const title = 'Svelte Heros'
-const description = 'TailwindLabs Heroicons for Svelte 4, 5, and Runes'
-const keywords = 'svelte, sveltekit, tailwindcss, icons, heroicons'
-const imgUrl = 'https://open-graph-vercel.vercel.app/api/svelte-heros'
+const title = 'Svelte Heros';
+const description = 'TailwindLabs Heroicons for Svelte 4, 5, and Runes';
+const keywords = 'svelte, sveltekit, tailwindcss, icons, heroicons';
+const imgUrl = 'https://open-graph-vercel.vercel.app/api/svelte-heros';
 
 test.beforeEach(async ({ page }) => {
   console.log(`Running ${test.info().title}`);
@@ -11,7 +11,7 @@ test.beforeEach(async ({ page }) => {
 });
 
 test('index page has expected h1', async ({ page }) => {
-	await expect(page.getByRole('heading', { name: title, level: 1 })).toBeVisible();
+  await expect(page.getByRole('heading', { name: title, level: 1 })).toBeVisible();
 });
 
 test('index page has expected meta title', async ({ page }) => {

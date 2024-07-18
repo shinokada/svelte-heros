@@ -1,5 +1,5 @@
 <script>
-  import Accessibility from 'svelte-heros/Accessibility.svelte';
+  import AcademicCap from 'svelte-heros/AcademicCap.svelte';
 </script>
 
-<Accessibility />
+<AcademicCap />

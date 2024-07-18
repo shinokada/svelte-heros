@@ -1,1 +1,1 @@
-<AdminLineUserFaces size="40" />
+<AcademicCap size="40" />

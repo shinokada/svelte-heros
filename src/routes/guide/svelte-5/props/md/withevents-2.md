@@ -1,1 +1,1 @@
-<Accessibility tabindex="0" withEvents />
+<AcademicCap tabindex="0" withEvents />

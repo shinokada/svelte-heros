@@ -1,1 +1,1 @@
-pnpm i -D svelte-lucide@next
+pnpm i -D svelte-heors@next
