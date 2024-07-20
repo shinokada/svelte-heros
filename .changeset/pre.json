@@ -5,6 +5,7 @@
     "svelte-heros": "7.0.0-next.0"
   },
   "changesets": [
+    "eleven-tomatoes-jog",
     "nine-apes-judge",
     "ninety-cheetahs-beg",
     "spicy-apes-vanish"
