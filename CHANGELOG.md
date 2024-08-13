@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 7.0.0-next.5
+
+### Patch Changes
+
+- fix: remove svelte:component from Icon.svelte ([`f7961da92d8a7f16dd49830da1a90a81d33c76c5`](https://github.com/shinokada/svelte-heros/commit/f7961da92d8a7f16dd49830da1a90a81d33c76c5))
+
 ## 7.0.0-next.4
 
 ### Patch Changes
