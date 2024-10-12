@@ -2,7 +2,6 @@ import type { Component } from 'svelte';
 import { type ListType, sidebarList } from 'runes-webkit';
 import { ExpandOutline, CogOutline, GridPlusOutline } from 'runes-webkit';
 
-
 const extra: ListType[] = [
   {
     name: 'Outline',
