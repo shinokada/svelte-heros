@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 7.0.0-next.6
+
+### Patch Changes
+
+- types: create types.ts ([`53e708f717e5feace0d2d54af81a0c225b5edfc1`](https://github.com/shinokada/svelte-heros/commit/53e708f717e5feace0d2d54af81a0c225b5edfc1))
+
 ## 7.0.0-next.5
 
 ### Patch Changes
