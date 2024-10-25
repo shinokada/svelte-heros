@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 7.0.1
+
+### Patch Changes
+
+- docs: README update
+
 ## 7.0.0
 
 ### Patch Changes

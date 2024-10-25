@@ -2,8 +2,8 @@
 
 <div class="flex gap-2 my-8">
 <a href="https://github.com/sponsors/shinokada" target="_blank"><img src="https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86" alt="sponsor" ></a>
-<a href="https://www.npmjs.com/package/svelte-heros" rel="nofollow" target="_blank"><img src="https://img.shields.io/npm/v/svelte-heros/next" alt="npm" ></a>
 <a href="https://www.npmjs.com/package/svelte-heros" rel="nofollow" target="_blank"><img src="https://img.shields.io/npm/v/svelte-heros" alt="npm" ></a>
+<a href="https://www.npmjs.com/package/svelte-heros" rel="nofollow" target="_blank"><img src="https://img.shields.io/npm/v/svelte-heros/v1-latest" alt="npm" ></a>
 <a href="https://twitter.com/shinokada" rel="nofollow" target="_blank"><img src="https://img.shields.io/badge/created%20by-@shinokada-4BBAAB.svg" alt="Created by Shin Okada" ></a>
 <a href="http://www.apache.org/licenses/" rel="nofollow" target="_blank"><img src="https://img.shields.io/github/license/shinokada/svelte-heros" alt="License" ></a>
 <a href="https://www.npmjs.com/package/svelte-heros" rel="nofollow" target="_blank"><img src="https://img.shields.io/npm/dw/svelte-heros.svg" alt="npm" ></a>
@@ -28,16 +28,16 @@ See the [Svelte Heros documentation](https://svelte-heros.codewithshin.com/) to 
 
 ## Installation
 
-### Svelte 5 Runes
+### Svelte 5 or later
 
 ```
-pnpm i svelte-heros@next
+pnpm i svelte-heros
 ```
 
 ### Svelte 4/5
 
 ```sh
-pnpm i svelte-heros@latest
+pnpm i svelte-heros@v1-latest
 ```
 
 ## Original source
