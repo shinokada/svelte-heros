@@ -10,7 +10,7 @@
     info,
     type CardType
   } from 'runes-webkit';
-  import { A } from 'svelte-5-ui-lib';
+
   const brand = {
     title: `${removeHyphensAndCapitalize(__NAME__)}`,
     description: `${__DESCRIPTION__}`,

@@ -18,7 +18,6 @@
 
   let ariaDescribedby = `${title?.id || ''} ${desc?.id || ''}`;
   const hasDescription = $derived(!!(title?.id || desc?.id));
-  let viewBox: string | undefined = $state(undefined);
 </script>
 
 <svg
@@ -63,18 +62,3 @@
     <path d="M6 11C8.76142 11 11 13.2386 11 16V17H1V16C1 13.2386 3.23858 11 6 11Z" fill={color} />
   {/if}
 </svg>
-
-<!--
-@component
-[Go to docs](https://svelte-heros.codewithshin.com/)
-## Props
-@prop size = ctx.size || '24'
-@prop role = ctx.role || 'img'
-@prop color = ctx.color || 'currentColor'
-@prop variation = ctx.variation || 'outline'
-@prop strokeWidth = ctx.strokeWidth || '1.5'
-@prop title
-@prop desc
-@prop ariaLabel = 'users'
-@prop ...restProps
--->
