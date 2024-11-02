@@ -61,3 +61,18 @@
     />
   {/if}
 </svg>
+
+<!--
+@component
+[Go to docs](https://svelte-heros.codewithshin.com/)
+## Props
+@prop size = ctx.size || '24'
+@prop role = ctx.role || 'img'
+@prop color = ctx.color || 'currentColor'
+@prop variation = ctx.variation || 'outline'
+@prop strokeWidth = ctx.strokeWidth || '1.5'
+@prop title
+@prop desc
+@prop ariaLabel = 'view boards'
+@prop ...restProps
+-->

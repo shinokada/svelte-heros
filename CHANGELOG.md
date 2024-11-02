@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 7.0.2
+
+### Patch Changes
+
+- fix: remove viewBox prop
+
 ## 7.0.1
 
 ### Patch Changes

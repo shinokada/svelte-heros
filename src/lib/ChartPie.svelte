@@ -61,3 +61,18 @@
     <path d="M12 2.25195C14.8113 2.97552 17.0245 5.18877 17.748 8.00004H12V2.25195Z" fill={color} />
   {/if}
 </svg>
+
+<!--
+@component
+[Go to docs](https://svelte-heros.codewithshin.com/)
+## Props
+@prop size = ctx.size || '24'
+@prop role = ctx.role || 'img'
+@prop color = ctx.color || 'currentColor'
+@prop variation = ctx.variation || 'outline'
+@prop strokeWidth = ctx.strokeWidth || '1.5'
+@prop title
+@prop desc
+@prop ariaLabel = 'chart pie'
+@prop ...restProps
+-->
