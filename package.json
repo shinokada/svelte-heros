@@ -39,7 +39,14 @@
 		"lint": "prettier --check . && eslint .",
 		"test:unit": "vitest",
 		"test": "npm run test:unit -- --run && npm run test:e2e",
-		"test:e2e": "playwright test"
+		"test:e2e": "playwright test",
+		"gen:exports": "svelte-lib-helpers exports",
+    "copy:packagejson": "svelte-lib-helpers package",
+    "gen:docs5": "svelte-lib-helpers docs5",
+    "lib-helpers": "pnpm format && pnpm gen:docs5 && pnpm prepack && pnpm gen:exports && pnpm copy:packagejson",
+    "c": "npx changeset",
+    "cv": "npx changeset version",
+    "cp": "npx changeset publish"
 	},
 	"files": [
 		"dist",
