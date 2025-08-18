@@ -21,6 +21,6 @@ const extra: ListType[] = [
 ];
 
 export const newSidebarList: ListType[] = [
-	...(Array.isArray(sidebarList) ? sidebarList : []),
-	...extra
+  ...(Array.isArray(sidebarList) ? sidebarList : []),
+  ...extra
 ];

@@ -6,19 +6,18 @@
 @source "../node_modules/runes-webkit/dist";
 
 @theme {
-	--z-index-100: 100;
+  --z-index-100: 100;
 
-	--color-primary-50: #ecfdf5;
-	--color-primary-100: #d1fae5;
-	--color-primary-200: #a7f3d0;
-	--color-primary-300: #6ee7b7;
-	--color-primary-400: #34d399;
-	--color-primary-500: #10b981;
-	--color-primary-600: #059669;
-	--color-primary-700: #047857;
-	--color-primary-800: #065f46;
-	--color-primary-900: #064e3b;
-
+  --color-primary-50: #ecfdf5;
+  --color-primary-100: #d1fae5;
+  --color-primary-200: #a7f3d0;
+  --color-primary-300: #6ee7b7;
+  --color-primary-400: #34d399;
+  --color-primary-500: #10b981;
+  --color-primary-600: #059669;
+  --color-primary-700: #047857;
+  --color-primary-800: #065f46;
+  --color-primary-900: #064e3b;
 }
 
 @layer base {
@@ -55,7 +54,7 @@
   }
 
   h1 {
-    @apply my-8 text-3xl text-primary-800 dark:text-primary-400;
+    @apply text-primary-800 dark:text-primary-400 my-8 text-3xl;
   }
 
   h2 {
@@ -86,4 +85,3 @@
 .dark-bg-theme2 {
   @apply dark:bg-zinc-900;
 }
-

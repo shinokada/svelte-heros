@@ -47,12 +47,12 @@
     svelteKitVersion: __SVELTEKIT_VERSION__,
     svelteRuneHighlight: __SVELTE_RUNE_HIGHLIGHT_VERSION__,
     viteVersion: __VITE_VERSION__,
-    tailwindcssVersion: __TAILWINDCSS_VERSION__,
+    tailwindcssVersion: __TAILWINDCSS_VERSION__
   };
 </script>
 
 <div class="relative mx-auto mt-8 h-full max-w-7xl overflow-y-auto px-8 pb-20">
-  <SupportBanner class="relative dark-bg-theme2">
+  <SupportBanner class="dark-bg-theme2 relative">
     To Keep It Going, Please Show Your Love.<a
       href="https://ko-fi.com/Z8Z2CHALG"
       target="_blank"

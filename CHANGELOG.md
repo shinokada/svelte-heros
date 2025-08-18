@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 7.0.3
+
+### Patch Changes
+
+- fix: change svelte-5-ui-lib with flowbite-svelte
+
 ## 7.0.2
 
 ### Patch Changes
