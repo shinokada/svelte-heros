@@ -5,7 +5,7 @@ interface Page {
   lastmod?: string;
 }
 
-const site = 'https://svelte-heros.codewithshin.com/';
+const site = 'https://svelte-heros.codewithshin.com';
 const pages: Page[] = [
   {
     loc: '',
