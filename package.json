@@ -1,6 +1,6 @@
 {
   "name": "svelte-heros",
-  "version": "7.0.3",
+  "version": "8.0.0",
   "description": "TailwindLabs Heroicons for Svelte 4, 5, and Runes",
   "license": "MIT",
   "homepage": "https://svelte-heros.codewithshin.com/",
@@ -24,7 +24,8 @@
   "contributors": [
     {
       "name": "tailwindlabs/heroicons",
-      "url": "https://github.com/tailwindlabs/heroicons/tree/v1"
+      "url": "https://github.com/tailwindlabs/heroicons/tree/v1",
+      "iconVersion": "1.0.6"
     }
   ],
   "scripts": {
@@ -112,6 +113,11 @@
     ".": {
       "types": "./dist/index.d.ts",
       "svelte": "./dist/index.js"
+    },
+    "./types": {
+      "types": "./dist/types.d.ts",
+      "import": "./dist/types.js",
+      "default": "./dist/types.js"
     },
     "./AcademicCap.svelte": {
       "types": "./dist/AcademicCap.svelte.d.ts",

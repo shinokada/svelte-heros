@@ -5,5 +5,6 @@
 - strokeWidth = ctx.strokeWidth || '1.5
 - title
 - desc
-- ariaLabel = "arrow circle down"
+- focusable = 'false'
+- ariaLabel
 - ...restProps

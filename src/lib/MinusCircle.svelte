@@ -12,11 +12,12 @@
     strokeWidth = ctx.strokeWidth || '1.5',
     title,
     desc,
-    ariaLabel = 'minus circle',
+    focusable = 'false',
+    ariaLabel,
     ...restProps
   }: Props = $props();
 
-  let ariaDescribedby = `${title?.id || ''} ${desc?.id || ''}`;
+  let ariaDescribedby = $derived(`${title?.id || ''} ${desc?.id || ''}`.trim());
   const hasDescription = $derived(!!(title?.id || desc?.id));
 </script>
 
@@ -27,7 +28,9 @@
   width={size}
   height={size}
   fill="none"
-  aria-label={ariaLabel}
+  {focusable}
+  aria-label={title?.id ? undefined : ariaLabel}
+  aria-labelledby={title?.id || undefined}
   aria-describedby={hasDescription ? ariaDescribedby : undefined}
   viewBox="0 0 24 24"
   stroke-width={strokeWidth}
@@ -67,6 +70,7 @@
 @prop strokeWidth = ctx.strokeWidth || '1.5'
 @prop title
 @prop desc
-@prop ariaLabel = 'minus circle'
+@prop focusable = 'false'
+@prop ariaLabel
 @prop ...restProps
 -->
