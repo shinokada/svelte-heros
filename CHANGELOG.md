@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## 8.0.1
+
+### Patch Changes
+
+- fix: change let to const
+
 ## 8.0.0
 
 ### Major Changes
