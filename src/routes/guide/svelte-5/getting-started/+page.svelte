@@ -38,7 +38,7 @@
   const downloads: NpmDownloadPropsType = {
     packageName: 'svelte-heros',
     logo: 'npm',
-    link: ['https://www.npmjs.com/package/svelte-heros']
+    link: ['https://www.npmjs.com/package/svelte-heros', 'https://svelte-heros.codewithshin.com/']
   };
   const modules = import.meta.glob('./md/*.md', {
     query: '?raw',
